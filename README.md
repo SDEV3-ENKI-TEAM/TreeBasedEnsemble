@@ -86,6 +86,15 @@ pip install -r requirements.txt
 
 ## 실행 방법
 
+### 0) 가상환경 활성화
+
+```bash
+# Windows
+.venv\Scripts\activate
+# macOS/Linux
+source .venv/bin/activate
+```
+
 ### 1) 이진 분류 앙상블 학습
 
 ```bash
