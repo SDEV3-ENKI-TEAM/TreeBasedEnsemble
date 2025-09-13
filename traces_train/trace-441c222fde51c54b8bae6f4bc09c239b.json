@@ -1,0 +1,354 @@
+﻿{
+    "traceID":  "441c222fde51c54b8bae6f4bc09c239b",
+    "spans":  [
+                  {
+                      "traceID":  "441c222fde51c54b8bae6f4bc09c239b",
+                      "spanID":  "35a881da3e0cc9a6",
+                      "operationName":  "schtasks.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "441c222fde51c54b8bae6f4bc09c239b",
+                                             "spanID":  "3f1617396ebe7021"
+                                         }
+                                     ],
+                      "startTime":  1756715401131484,
+                      "duration":  3574,
+                      "tags":  [
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\schtasks.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "08846768-5988-68b5-c207-000000000b00"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  8460
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/01/2025 17:30:00"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "DESKTOP-2I19OQ1\\test"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-01 08:30:00.621"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  4560
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "df"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=3f1617396ebe7021; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "441c222fde51c54b8bae6f4bc09c239b",
+                      "spanID":  "fc9333c894bd5392",
+                      "operationName":  "schtasks.exe@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "441c222fde51c54b8bae6f4bc09c239b",
+                                             "spanID":  "3f1617396ebe7021"
+                                         }
+                                     ],
+                      "startTime":  1756715401014682,
+                      "duration":  6774,
+                      "tags":  [
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "schtasks.exe /create /tn \"VGAuthServiceV\" /sc MINUTE /mo 7 /tr \"\u0027C:\\Windows\\appcompat\\Backup\\VGAuthService.exe\u0027\" /f"
+                                   },
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\system32\\"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "Task Scheduler Configuration Tool"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.19041.3636 (WinBuild.160101.0800)"
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=D4DA03B7BB20B7E4F1B762A365D4DD4F,SHA256=9A80453518078BADF0679B0CF30F50A83163E5264A2665C6052CC27F168C50F2,IMPHASH=ECCE05491F2E8F279F4790BCB1318C05"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\schtasks.exe"
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "08846768-0de7-68af-1622-180000000000"
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  1581590
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "schtasks.exe"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\system32\\wbem\\wmiprvse.exe -secured -Embedding"
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\wbem\\WmiPrvSE.exe"
+                                   },
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "08846768-0d9d-68af-6800-000000000b00"
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  4560
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "NT AUTHORITY\\NETWORK SERVICE"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "08846768-5988-68b5-c207-000000000b00"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  8460
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/01/2025 17:30:00"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "DESKTOP-2I19OQ1\\test"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-01 08:30:00.498"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 1"
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"92626ddd-662c-49e3-ac59-f6535f12d189\"]"
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"Scheduled Task Creation Via Schtasks.EXE\"]"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  4560
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "df"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=3f1617396ebe7021; skipping clock skew adjustment"
+                                   ]
+                  }
+              ],
+    "processes":  {
+                      "p1":  {
+                                 "serviceName":  "event-agent",
+                                 "tags":  [
+                                              {
+                                                  "key":  "service.instance.id",
+                                                  "type":  "string",
+                                                  "value":  "d93a2bf5-66a8-40c7-a34e-218f080e99b1"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.language",
+                                                  "type":  "string",
+                                                  "value":  "dotnet"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.name",
+                                                  "type":  "string",
+                                                  "value":  "opentelemetry"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.version",
+                                                  "type":  "string",
+                                                  "value":  "1.12.0"
+                                              }
+                                          ]
+                             }
+                  },
+    "warnings":  null
+}
