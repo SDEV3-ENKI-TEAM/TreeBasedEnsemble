@@ -93,7 +93,7 @@ def main():
             eval_set=[(X_va, y_va)],
             eval_metric="logloss",
             callbacks=[
-                early_stopping(stopping_rounds=50),
+                early_stopping(stopping_rounds=30),
                 log_evaluation(0)
             ]
         )

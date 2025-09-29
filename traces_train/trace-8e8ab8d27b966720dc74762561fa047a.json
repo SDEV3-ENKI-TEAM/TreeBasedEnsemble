@@ -1,0 +1,199 @@
+﻿{
+    "traceID":  "8e8ab8d27b966720dc74762561fa047a",
+    "spans":  [
+                  {
+                      "traceID":  "8e8ab8d27b966720dc74762561fa047a",
+                      "spanID":  "7c9699d3f53a15c1",
+                      "operationName":  "process:7588",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "8e8ab8d27b966720dc74762561fa047a",
+                                             "spanID":  "a985781573ca0fd6"
+                                         }
+                                     ],
+                      "startTime":  1758807726903652,
+                      "duration":  16726,
+                      "tags":  [
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=a985781573ca0fd6; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "8e8ab8d27b966720dc74762561fa047a",
+                      "spanID":  "eb7f627803764cc6",
+                      "operationName":  "whoami.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "8e8ab8d27b966720dc74762561fa047a",
+                                             "spanID":  "3ed5b3fd8b266da2"
+                                         }
+                                     ],
+                      "startTime":  1758807726918600,
+                      "duration":  1784,
+                      "tags":  [
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\whoami.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "5847f778-469a-68d5-a801-000000000500"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  7588
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 06:42:02"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-KH0QS2E5QMD\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 13:42:02.573"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 2"
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"502b42de-4306-40b4-9596-6f590c81f073\",\"e28a5a99-da44-436d-b7a0-2afc20a5f413\"]"
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  2
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"Local Accounts Discovery\",\"Whoami Utility Execution\"]"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  2472
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=3ed5b3fd8b266da2; skipping clock skew adjustment"
+                                   ]
+                  }
+              ],
+    "processes":  {
+                      "p1":  {
+                                 "serviceName":  "event-agent",
+                                 "tags":  [
+                                              {
+                                                  "key":  "service.instance.id",
+                                                  "type":  "string",
+                                                  "value":  "2cbe759e-1c43-4aae-a07d-bc37710b0679"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.language",
+                                                  "type":  "string",
+                                                  "value":  "dotnet"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.name",
+                                                  "type":  "string",
+                                                  "value":  "opentelemetry"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.version",
+                                                  "type":  "string",
+                                                  "value":  "1.12.0"
+                                              }
+                                          ]
+                             }
+                  },
+    "warnings":  null
+}

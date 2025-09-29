@@ -11,7 +11,7 @@ def main():
     ap.add_argument("--data_dir", required=True, help="Dir with *.json traces to score")
     ap.add_argument("--model_dir", required=True, help="Directory containing ensemble_models.joblib & feature_columns.json")
     ap.add_argument("--out_csv", default="pred_ensemble.csv")
-    ap.add_argument("--thr", type=float, default=0.7, help="Threshold for malicious classification")
+    ap.add_argument("--thr", type=float, default=0.75, help="Threshold for malicious classification")
     args = ap.parse_args()
 
     folds = joblib.load(os.path.join(args.model_dir, "ensemble_models.joblib"))

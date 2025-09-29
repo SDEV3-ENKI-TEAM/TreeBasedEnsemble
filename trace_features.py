@@ -87,7 +87,7 @@ class TraceFeaturizer:
             except Exception:
                 evt_id = -1
             evt_nm = tags_d.get("EventName", "")
-            rule   = tags_d.get("RuleName", "-")
+            rule   = tags_d.get("RuleName", "")
 
             counts[f"evt_id:{evt_id}"] += 1
             if evt_nm:
@@ -112,6 +112,18 @@ class TraceFeaturizer:
             if tf:
                 for tk in _path_tokens(tf):
                     path_tok_bag.append("tf:"+tk)
+
+            # CommandLine features
+            cl = tags_d.get("CommandLine", "")
+            if cl:
+                for tk in _path_tokens(cl):
+                    path_tok_bag.append("cl:"+tk)
+
+            # # ParentCommandLine features
+            # cl = tags_d.get("ParentCommandLine", "")
+            # if cl:
+            #     for tk in _path_tokens(cl):
+            #         path_tok_bag.append("cl:"+tk)
 
             # DNS features
             qn = tags_d.get("QueryName", "")
