@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  stream-ensemble:
+    build:
+      context: .
+      dockerfile: Dockerfile.stream
+    container_name: stream-ensemble
+    environment:
+      - BOOTSTRAP=13.125.78.213:19092
+      - IN_TOPIC=raw_trace
+      - OUT_TOPIC=ensemble_predict
+      - MODEL_DIR=/app/model_ens_out
+      - PRED_THRESHOLD=0.75
+    volumes:
+      - ./model_ens_out:/app/model_ens_out:ro
+    restart: unless-stopped
