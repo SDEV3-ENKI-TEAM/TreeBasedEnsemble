@@ -1,0 +1,3157 @@
+﻿{
+    "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+    "spans":  [
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "154fcba13e59a97c",
+                      "operationName":  "powershell.exe@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "81a9730c4d847644"
+                                         }
+                                     ],
+                      "startTime":  1758778311965259,
+                      "duration":  172,
+                      "tags":  [
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d266-68d4-df0f-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:49"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -Command \"Import-Module \\\"C:\\AtomicRedTeam\\invoke-atomicredteam\\Invoke-AtomicRedTeam.psd1\\\" -Force; Invoke-AtomicTest T1201\" "
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.26100.1 (WinBuild.160101.0800)"
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  10632
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"Non Interactive PowerShell Process Spawned\"]"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "Windows PowerShell"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" "
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-bd32-68d4-9ac3-0c0000000000"
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  836506
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:49.960"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10632
+                                   },
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=909A2EEC5534F01DFF87B7D47E57BFF7,SHA256=D3B4B97C2BF97D70E5655FF4C4CA1D8CEF9DED51685CFD764247CFDA98EE68DF,IMPHASH=AFACF6DC9041114B198160AAB4D0AE77"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 1"
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "PowerShell.EXE"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"f4bbd493-b796-416e-bbf2-121235348529\"]"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c5-68d4-c412-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\windows\\Desktop\\EventAgent-main\\"
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=81a9730c4d847644; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "616dbdc2bfa65ebe",
+                      "operationName":  "powershell.exe@evt:11",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "81a9730c4d847644"
+                                         }
+                                     ],
+                      "startTime":  1758778311966479,
+                      "duration":  88,
+                      "tags":  [
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:50.508"
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 2"
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  2
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  11
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c5-68d4-c412-000000000a00"
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"PSScriptPolicyTest Creation By Uncommon Process\",\"System File Execution Location Anomaly\"]"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10632
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Filecreated(rule:FileCreate)"
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "TargetFilename",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\windows\\AppData\\Local\\Temp\\__PSScriptPolicyTest_j5gthcbv.v20.ps1"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"1027d292-dd87-4a1a-8701-2abe04d7783c\",\"e4a6b256-3e47-40fc-89d2-7a477edd6915\"]"
+                                   },
+                                   {
+                                       "key":  "CreationUtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:50.508"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:50"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=81a9730c4d847644; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "c3d03f68b3b5b91f",
+                      "operationName":  "HOSTNAME.EXE@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778312970113,
+                      "duration":  70,
+                      "tags":  [
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "hostname.exe"
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\WINDOWS\\system32\\HOSTNAME.EXE\""
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  836506
+                                   },
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=B6F11307D51F364FB0019E6FF5BC688D,SHA256=B9D142206C40278E2AA3CF55FFB10C6D569F181B144530F844020E04FD81C7EF,IMPHASH=8CB84C534505B1E47EF25FA2CD9A16BB"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  7368
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "Hostname APP"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -Command \"Import-Module \\\"C:\\AtomicRedTeam\\invoke-atomicredteam\\Invoke-AtomicRedTeam.psd1\\\" -Force; Invoke-AtomicTest T1201\" "
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\HOSTNAME.EXE"
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-bd32-68d4-9ac3-0c0000000000"
+                                   },
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c5-68d4-c412-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:50.998"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\windows\\Desktop\\EventAgent-main\\"
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.26100.1301 (WinBuild.160101.0800)"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c6-68d4-da12-000000000a00"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:50"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "clock skew adjustment disabled; not applying calculated delta of -1.004803s"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "86760887cb07abf6",
+                      "operationName":  "HOSTNAME.EXE@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778312970185,
+                      "duration":  75,
+                      "tags":  [
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\HOSTNAME.EXE"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c6-68d4-da12-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  7368
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:51"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:51.010"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "clock skew adjustment disabled; not applying calculated delta of -1.0048775s"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "0cd7090ede33c8ef",
+                      "operationName":  "HOSTNAME.EXE@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778312973157,
+                      "duration":  76,
+                      "tags":  [
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c5-68d4-c412-000000000a00"
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-bd32-68d4-9ac3-0c0000000000"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c7-68d4-eb12-000000000a00"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\windows\\Desktop\\EventAgent-main\\"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -Command \"Import-Module \\\"C:\\AtomicRedTeam\\invoke-atomicredteam\\Invoke-AtomicRedTeam.psd1\\\" -Force; Invoke-AtomicTest T1201\" "
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\HOSTNAME.EXE"
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  836506
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=B6F11307D51F364FB0019E6FF5BC688D,SHA256=B9D142206C40278E2AA3CF55FFB10C6D569F181B144530F844020E04FD81C7EF,IMPHASH=8CB84C534505B1E47EF25FA2CD9A16BB"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:51.510"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.26100.1301 (WinBuild.160101.0800)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "hostname.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6620
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\WINDOWS\\system32\\HOSTNAME.EXE\""
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:51"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "Hostname APP"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "clock skew adjustment disabled; not applying calculated delta of -1.00785s"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "ce6b1070744b4efc",
+                      "operationName":  "HOSTNAME.EXE@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778312973780,
+                      "duration":  101,
+                      "tags":  [
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:51"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\HOSTNAME.EXE"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  6620
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:51.523"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c7-68d4-eb12-000000000a00"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "clock skew adjustment disabled; not applying calculated delta of -1.0084855s"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "4d49b3f0b27d4d11",
+                      "operationName":  "whoami.exe@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778312973888,
+                      "duration":  84,
+                      "tags":  [
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 2"
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\whoami.exe"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -Command \"Import-Module \\\"C:\\AtomicRedTeam\\invoke-atomicredteam\\Invoke-AtomicRedTeam.psd1\\\" -Force; Invoke-AtomicTest T1201\" "
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"502b42de-4306-40b4-9596-6f590c81f073\",\"e28a5a99-da44-436d-b7a0-2afc20a5f413\"]"
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"Local Accounts Discovery\",\"Whoami Utility Execution\"]"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  836506
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "whoami.exe"
+                                   },
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c5-68d4-c412-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  7764
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:51"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c7-68d4-ee12-000000000a00"
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=D5EFF4828E7E34CB7DD45A792B5EC84E,SHA256=88778E33EA3812E736744504B15572E4A1E41053E41287E756B43C25BEBC3B6A,IMPHASH=E4464BCD92DF7AC69CCD074CB9C0EFED"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\WINDOWS\\system32\\whoami.exe\""
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:51.526"
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-bd32-68d4-9ac3-0c0000000000"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\windows\\Desktop\\EventAgent-main\\"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "whoami - displays logged on user information"
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  2
+                                   },
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.26100.1 (WinBuild.160101.0800)"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "clock skew adjustment disabled; not applying calculated delta of -1.008585s"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "34b98f14d84a853e",
+                      "operationName":  "whoami.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778313981932,
+                      "duration":  227,
+                      "tags":  [
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:51.541"
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\whoami.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c7-68d4-ee12-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  7764
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 2"
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"502b42de-4306-40b4-9596-6f590c81f073\",\"e28a5a99-da44-436d-b7a0-2afc20a5f413\"]"
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"Local Accounts Discovery\",\"Whoami Utility Execution\"]"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  2
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:51"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  null
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "5e10e72907a182f9",
+                      "operationName":  "cmd.exe@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778314997020,
+                      "duration":  108,
+                      "tags":  [
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c8-68d4-1913-000000000a00"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -Command \"Import-Module \\\"C:\\AtomicRedTeam\\invoke-atomicredteam\\Invoke-AtomicRedTeam.psd1\\\" -Force; Invoke-AtomicTest T1201\" "
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "\"cmd.exe\" /c net accounts /domain"
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  836506
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:52.915"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c5-68d4-c412-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  12568
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.26100.1591 (WinBuild.160101.0800)"
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=B63148610EB6310740000DC856FE837A,SHA256=486AA8AC1661C0DC08D3EBEA4F25F0009D248F2CED111DEA8587C2B7D71B49BB,IMPHASH=05CB934E42838CA78A9F01D367E81539"
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "Cmd.Exe"
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:52"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "Windows Command Processor"
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\cmd.exe"
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-bd32-68d4-9ac3-0c0000000000"
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\windows\\AppData\\Local\\Temp\\"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "clock skew adjustment disabled; not applying calculated delta of -3.031729s"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "392f0f8aacae7171",
+                      "operationName":  "net.exe@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "5e10e72907a182f9"
+                                         }
+                                     ],
+                      "startTime":  1758778314997237,
+                      "duration":  176,
+                      "tags":  [
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\windows\\AppData\\Local\\Temp\\"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "Net Command"
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  836506
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "net  accounts /domain"
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  12568
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  12568
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.26100.1 (WinBuild.160101.0800)"
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\cmd.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c8-68d4-1c13-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  3980
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"Potential CommandLine Path Traversal Via Cmd.EXE\",\"Suspicious Group And Account Reconnaissance Activity Using Net.EXE\"]"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\net.exe"
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:52.946"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-bd32-68d4-9ac3-0c0000000000"
+                                   },
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c8-68d4-1913-000000000a00"
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"087790e3-3287-436c-bccf-cbd0184a7db1\",\"d95de845-b83c-4a9a-8a6a-4fc802ebf6c0\"]"
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  2
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=1BFB2C7C3B8BE001F5A346E5AA4A5C2D,SHA256=3BFE5126FA138291696C4551077D007650425B0BF399FD94363E9E9C7BE73ED5,IMPHASH=EF46B86C2346DA0A991DE4B78AAF4E75"
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "net.exe"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "\"cmd.exe\" /c net accounts /domain"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:52"
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 2"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  null
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "af4689fcce7005c4",
+                      "operationName":  "net1.exe@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "392f0f8aacae7171"
+                                         }
+                                     ],
+                      "startTime":  1758778314997420,
+                      "duration":  99,
+                      "tags":  [
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  3980
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\windows\\AppData\\Local\\Temp\\"
+                                   },
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c8-68d4-1c13-000000000a00"
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:52.955"
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "net1.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c8-68d4-1e13-000000000a00"
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"d95de845-b83c-4a9a-8a6a-4fc802ebf6c0\"]"
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=12293EDB07AB8B4D92BAF4BEBFD7A9D8,SHA256=15E3429ECCE48FC6AB66371D040F4C40FB961F2CED4C7D40942279B19DEFE8C7,IMPHASH=98A56655C7E54BCE7F55B3F01AB5B07E"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\net.exe"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:52"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "C:\\WINDOWS\\system32\\net1  accounts /domain"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "Net Command"
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-bd32-68d4-9ac3-0c0000000000"
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  836506
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  3980
+                                   },
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "net  accounts /domain"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  12392
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.26100.1150 (WinBuild.160101.0800)"
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\net1.exe"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"Suspicious Group And Account Reconnaissance Activity Using Net.EXE\"]"
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 1"
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  1
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "clock skew adjustment disabled; not applying calculated delta of -144.5Âµs"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "c56de73f4a1b000b",
+                      "operationName":  "net1.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "392f0f8aacae7171"
+                                         }
+                                     ],
+                      "startTime":  1758778314997525,
+                      "duration":  69,
+                      "tags":  [
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  12392
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\net1.exe"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:52.970"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c8-68d4-1e13-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:52"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  3980
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "clock skew adjustment disabled; not applying calculated delta of -234.5Âµs"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "a3bcb70004b2d08c",
+                      "operationName":  "net.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "5e10e72907a182f9"
+                                         }
+                                     ],
+                      "startTime":  1758778314997597,
+                      "duration":  215,
+                      "tags":  [
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\net.exe"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  12568
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c8-68d4-1c13-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  3980
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:52"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:52.972"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  null
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "2f5cb44a9f858421",
+                      "operationName":  "cmd.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778314997815,
+                      "duration":  201,
+                      "tags":  [
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c8-68d4-1913-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  12568
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:52"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:52.975"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\cmd.exe"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  null
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "5b623112561ec5ba",
+                      "operationName":  "powershell.exe@evt:22",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778320069186,
+                      "duration":  221,
+                      "tags":  [
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c9-68d4-2513-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "QueryResults",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "QueryStatus",
+                                       "type":  "string",
+                                       "value":  "9003"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  22
+                                   },
+                                   {
+                                       "key":  "QueryName",
+                                       "type":  "string",
+                                       "value":  "_ldap._tcp.dc._msdcs.WIN-Q5K8V1QHISE"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Dnsquery(rule:DnsQuery)"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:31:57"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:31:55.390"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  9324
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  null
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "3d451e383d829f8b",
+                      "operationName":  "powershell.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778324669645,
+                      "duration":  69,
+                      "tags":  [
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  9324
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:32:03"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:32:03.566"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c9-68d4-2513-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "clock skew adjustment disabled; not applying calculated delta of -12.7043345s"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "67391d5990df3da6",
+                      "operationName":  "powershell.exe@evt:1",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778325677897,
+                      "duration":  160,
+                      "tags":  [
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:32:03.736"
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   },
+                                   {
+                                       "key":  "Company",
+                                       "type":  "string",
+                                       "value":  "Microsoft Corporation"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  5320
+                                   },
+                                   {
+                                       "key":  "TerminalSessionId",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 1"
+                                   },
+                                   {
+                                       "key":  "CommandLine",
+                                       "type":  "string",
+                                       "value":  "\"powershell.exe\" \u0026 {get-addefaultdomainpasswordpolicy}"
+                                   },
+                                   {
+                                       "key":  "Description",
+                                       "type":  "string",
+                                       "value":  "Windows PowerShell"
+                                   },
+                                   {
+                                       "key":  "FileVersion",
+                                       "type":  "string",
+                                       "value":  "10.0.26100.1 (WinBuild.160101.0800)"
+                                   },
+                                   {
+                                       "key":  "ParentProcessId",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "OriginalFileName",
+                                       "type":  "string",
+                                       "value":  "PowerShell.EXE"
+                                   },
+                                   {
+                                       "key":  "ParentUser",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3d3-68d4-4513-000000000a00"
+                                   },
+                                   {
+                                       "key":  "LogonId",
+                                       "type":  "int64",
+                                       "value":  836506
+                                   },
+                                   {
+                                       "key":  "ParentImage",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "CurrentDirectory",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\windows\\AppData\\Local\\Temp\\"
+                                   },
+                                   {
+                                       "key":  "Hashes",
+                                       "type":  "string",
+                                       "value":  "MD5=909A2EEC5534F01DFF87B7D47E57BFF7,SHA256=D3B4B97C2BF97D70E5655FF4C4CA1D8CEF9DED51685CFD764247CFDA98EE68DF,IMPHASH=AFACF6DC9041114B198160AAB4D0AE77"
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "IntegrityLevel",
+                                       "type":  "string",
+                                       "value":  "High"
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  1
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "ParentProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c5-68d4-c412-000000000a00"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:32:03"
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"f4bbd493-b796-416e-bbf2-121235348529\"]"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "ProcessCreate(rule:ProcessCreate)"
+                                   },
+                                   {
+                                       "key":  "Product",
+                                       "type":  "string",
+                                       "value":  "MicrosoftÂ® WindowsÂ® Operating System"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"Non Interactive PowerShell Process Spawned\"]"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "LogonGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-bd32-68d4-9ac3-0c0000000000"
+                                   },
+                                   {
+                                       "key":  "ParentCommandLine",
+                                       "type":  "string",
+                                       "value":  "\"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -Command \"Import-Module \\\"C:\\AtomicRedTeam\\invoke-atomicredteam\\Invoke-AtomicRedTeam.psd1\\\" -Force; Invoke-AtomicTest T1201\" "
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "clock skew adjustment disabled; not applying calculated delta of -13.712632s"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "28e4f82149e44013",
+                      "operationName":  "powershell.exe@evt:11",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778325678073,
+                      "duration":  913,
+                      "tags":  [
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:32:03.786"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.status_description",
+                                       "type":  "string",
+                                       "value":  "Sigma rules matched: 2"
+                                   },
+                                   {
+                                       "key":  "otel.status_code",
+                                       "type":  "string",
+                                       "value":  "ERROR"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  11
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TargetFilename",
+                                       "type":  "string",
+                                       "value":  "C:\\Users\\windows\\AppData\\Local\\Temp\\__PSScriptPolicyTest_vxeystk3.oqg.ps1"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:32:03"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "CreationUtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:32:03.786"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3d3-68d4-4513-000000000a00"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "sigma.match_count",
+                                       "type":  "int64",
+                                       "value":  2
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sigma.alert",
+                                       "type":  "string",
+                                       "value":  "[\"1027d292-dd87-4a1a-8701-2abe04d7783c\",\"e4a6b256-3e47-40fc-89d2-7a477edd6915\"]"
+                                   },
+                                   {
+                                       "key":  "sigma.rule_title",
+                                       "type":  "string",
+                                       "value":  "[\"PSScriptPolicyTest Creation By Uncommon Process\",\"System File Execution Location Anomaly\"]"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Filecreated(rule:FileCreate)"
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  5320
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "error",
+                                       "type":  "bool",
+                                       "value":  true
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  null
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "6698481c88173dba",
+                      "operationName":  "powershell.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778325678995,
+                      "duration":  98,
+                      "tags":  [
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3d3-68d4-4513-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:32:03"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:32:03.908"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  5320
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "clock skew adjustment disabled; not applying calculated delta of -13.713699s"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "8a1e6cbca155047a",
+                      "operationName":  "powershell.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "81a9730c4d847644"
+                                         }
+                                     ],
+                      "startTime":  1758778326681097,
+                      "duration":  81,
+                      "tags":  [
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:32:04"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10632
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c5-68d4-c412-000000000a00"
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:32:04.221"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=81a9730c4d847644; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                      "spanID":  "5640f46120c4ea87",
+                      "operationName":  "powershell.exe@evt:22",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "30ef290da7f05e4cbad5832da33044e9",
+                                             "spanID":  "154fcba13e59a97c"
+                                         }
+                                     ],
+                      "startTime":  1758778327907739,
+                      "duration":  277,
+                      "tags":  [
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "qwer"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  22
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  9324
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "QueryResults",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "QueryStatus",
+                                       "type":  "string",
+                                       "value":  "1460"
+                                   },
+                                   {
+                                       "key":  "QueryName",
+                                       "type":  "string",
+                                       "value":  "_ldap._tcp.dc._msdcs.WIN-Q5K8V1QHISE"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "internal.span.format",
+                                       "type":  "string",
+                                       "value":  "otlp"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Dnsquery(rule:DnsQuery)"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "e339b6fe-d3c9-68d4-2513-000000000a00"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/25/2025 14:32:05"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "WIN-Q5K8V1QHISE\\windows"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-25 05:32:02.430"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  10524
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  null
+                  }
+              ],
+    "processes":  {
+                      "p1":  {
+                                 "serviceName":  "event-agent",
+                                 "tags":  [
+                                              {
+                                                  "key":  "otel.library.name",
+                                                  "type":  "string",
+                                                  "value":  "event.agent"
+                                              },
+                                              {
+                                                  "key":  "service.instance.id",
+                                                  "type":  "string",
+                                                  "value":  "5387dc4a-d799-4429-a6e8-c8be603bf9cb"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.language",
+                                                  "type":  "string",
+                                                  "value":  "dotnet"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.name",
+                                                  "type":  "string",
+                                                  "value":  "opentelemetry"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.version",
+                                                  "type":  "string",
+                                                  "value":  "1.12.0"
+                                              }
+                                          ]
+                             }
+                  },
+    "warnings":  null
+}

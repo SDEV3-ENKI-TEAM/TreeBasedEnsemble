@@ -1,0 +1,167 @@
+﻿{
+    "traceID":  "931f49ae09e674a61402bdc5a20b3e1e",
+    "spans":  [
+                  {
+                      "traceID":  "931f49ae09e674a61402bdc5a20b3e1e",
+                      "spanID":  "868100a71b0bfada",
+                      "operationName":  "process:20744",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "931f49ae09e674a61402bdc5a20b3e1e",
+                                             "spanID":  "bd45dc885b27faa7"
+                                         }
+                                     ],
+                      "startTime":  1757002700877410,
+                      "duration":  976,
+                      "tags":  [
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  [
+                                       "invalid parent span IDs=bd45dc885b27faa7; skipping clock skew adjustment"
+                                   ]
+                  },
+                  {
+                      "traceID":  "931f49ae09e674a61402bdc5a20b3e1e",
+                      "spanID":  "450bf8112fc6ca05",
+                      "operationName":  "ngen.exe@evt:5",
+                      "references":  [
+                                         {
+                                             "refType":  "CHILD_OF",
+                                             "traceID":  "931f49ae09e674a61402bdc5a20b3e1e",
+                                             "spanID":  "868100a71b0bfada"
+                                         }
+                                     ],
+                      "startTime":  1757002700877413,
+                      "duration":  986,
+                      "tags":  [
+                                   {
+                                       "key":  "EventName",
+                                       "type":  "string",
+                                       "value":  "Processterminated(rule:ProcessTerminate)"
+                                   },
+                                   {
+                                       "key":  "ID",
+                                       "type":  "int64",
+                                       "value":  5
+                                   },
+                                   {
+                                       "key":  "Image",
+                                       "type":  "string",
+                                       "value":  "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\ngen.exe"
+                                   },
+                                   {
+                                       "key":  "ProcessGuid",
+                                       "type":  "string",
+                                       "value":  "79d5292e-bbca-68b9-0e33-000000004100"
+                                   },
+                                   {
+                                       "key":  "ProcessId",
+                                       "type":  "int64",
+                                       "value":  20744
+                                   },
+                                   {
+                                       "key":  "ProviderGuid",
+                                       "type":  "string",
+                                       "value":  "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                                   },
+                                   {
+                                       "key":  "RuleName",
+                                       "type":  "string",
+                                       "value":  "-"
+                                   },
+                                   {
+                                       "key":  "TimeStamp",
+                                       "type":  "string",
+                                       "value":  "09/05/2025 01:18:18"
+                                   },
+                                   {
+                                       "key":  "User",
+                                       "type":  "string",
+                                       "value":  "NT AUTHORITY\\SYSTEM"
+                                   },
+                                   {
+                                       "key":  "UtcTime",
+                                       "type":  "string",
+                                       "value":  "2025-09-04 16:18:18.294"
+                                   },
+                                   {
+                                       "key":  "channel",
+                                       "type":  "string",
+                                       "value":  "Sysmon"
+                                   },
+                                   {
+                                       "key":  "otel.scope.name",
+                                       "type":  "string",
+                                       "value":  "event.agent"
+                                   },
+                                   {
+                                       "key":  "span.kind",
+                                       "type":  "string",
+                                       "value":  "internal"
+                                   },
+                                   {
+                                       "key":  "sysmon.opcode",
+                                       "type":  "string",
+                                       "value":  "Info"
+                                   },
+                                   {
+                                       "key":  "sysmon.ppid",
+                                       "type":  "int64",
+                                       "value":  0
+                                   },
+                                   {
+                                       "key":  "user_id",
+                                       "type":  "string",
+                                       "value":  "kl"
+                                   }
+                               ],
+                      "logs":  [
+
+                               ],
+                      "processID":  "p1",
+                      "warnings":  null
+                  }
+              ],
+    "processes":  {
+                      "p1":  {
+                                 "serviceName":  "event-agent",
+                                 "tags":  [
+                                              {
+                                                  "key":  "service.instance.id",
+                                                  "type":  "string",
+                                                  "value":  "f52ef4a5-7eee-470b-84b0-d6decadf9412"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.language",
+                                                  "type":  "string",
+                                                  "value":  "dotnet"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.name",
+                                                  "type":  "string",
+                                                  "value":  "opentelemetry"
+                                              },
+                                              {
+                                                  "key":  "telemetry.sdk.version",
+                                                  "type":  "string",
+                                                  "value":  "1.12.0"
+                                              }
+                                          ]
+                             }
+                  },
+    "warnings":  null
+}

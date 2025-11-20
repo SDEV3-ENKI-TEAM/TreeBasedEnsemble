@@ -1,0 +1,4844 @@
+{
+  "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+  "spans": [
+    {
+      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+      "spanID": "b66e7c04b0e54f90",
+      "operationName": "MSBuild.exe@evt:1",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+          "spanID": "1c55f47adc4469b3",
+          "span": {
+            "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+            "spanID": "1c55f47adc4469b3",
+            "operationName": "0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe@evt:1",
+            "references": [
+              {
+                "refType": "CHILD_OF",
+                "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                "spanID": "44fe8d7251a0322c"
+              }
+            ],
+            "startTime": 1761493087343455,
+            "duration": 707,
+            "tags": [
+              {
+                "key": "channel",
+                "type": "string",
+                "value": "Sysmon"
+              },
+              {
+                "key": "CommandLine",
+                "type": "string",
+                "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+              },
+              {
+                "key": "Company",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "CurrentDirectory",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+              },
+              {
+                "key": "Description",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "error",
+                "type": "bool",
+                "value": true
+              },
+              {
+                "key": "EventName",
+                "type": "string",
+                "value": "ProcessCreate(rule:ProcessCreate)"
+              },
+              {
+                "key": "FileVersion",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "Hashes",
+                "type": "string",
+                "value": "SHA256=0738238CE5F24725197DD54BF3C74621E3B6B1523B7EBCADBEE811FA9DC2BCE1"
+              },
+              {
+                "key": "ID",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "Image",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+              },
+              {
+                "key": "IntegrityLevel",
+                "type": "string",
+                "value": "High"
+              },
+              {
+                "key": "LogonGuid",
+                "type": "string",
+                "value": "8f5ab330-3c05-68fe-510b-040000000000"
+              },
+              {
+                "key": "LogonId",
+                "type": "int64",
+                "value": 265041
+              },
+              {
+                "key": "OriginalFileName",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "otel.scope.name",
+                "type": "string",
+                "value": "event.agent"
+              },
+              {
+                "key": "otel.status_code",
+                "type": "string",
+                "value": "ERROR"
+              },
+              {
+                "key": "otel.status_description",
+                "type": "string",
+                "value": "Sigma rules matched: 1"
+              },
+              {
+                "key": "ParentCommandLine",
+                "type": "string",
+                "value": "C:\\WINDOWS\\Explorer.EXE"
+              },
+              {
+                "key": "ParentImage",
+                "type": "string",
+                "value": "C:\\Windows\\explorer.exe"
+              },
+              {
+                "key": "ParentProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-3c07-68fe-6600-000000000700"
+              },
+              {
+                "key": "ParentProcessId",
+                "type": "int64",
+                "value": 1608
+              },
+              {
+                "key": "ParentUser",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "ProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-405c-68fe-5901-000000000700"
+              },
+              {
+                "key": "ProcessId",
+                "type": "int64",
+                "value": 1620
+              },
+              {
+                "key": "Product",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "ProviderGuid",
+                "type": "string",
+                "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+              },
+              {
+                "key": "RuleName",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "sigma.alert",
+                "type": "string",
+                "value": "[\"dd8756e7-a3a0-4768-b47e-8f545d1a751c\"]"
+              },
+              {
+                "key": "sigma.match_count",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "sigma.rule_title",
+                "type": "string",
+                "value": "[\"Suspicious LNK Command-Line Padding with Whitespace Characters\"]"
+              },
+              {
+                "key": "span.kind",
+                "type": "string",
+                "value": "internal"
+              },
+              {
+                "key": "sysmon.opcode",
+                "type": "string",
+                "value": "Info"
+              },
+              {
+                "key": "sysmon.ppid",
+                "type": "int64",
+                "value": 1608
+              },
+              {
+                "key": "TerminalSessionId",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "TimeStamp",
+                "type": "string",
+                "value": "10/27/2025 00:38:04"
+              },
+              {
+                "key": "User",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "user_id",
+                "type": "string",
+                "value": "qwer"
+              },
+              {
+                "key": "UtcTime",
+                "type": "string",
+                "value": "2025-10-26 15:38:04.438"
+              }
+            ],
+            "logs": [],
+            "processID": "p1",
+            "warnings": [
+              "invalid parent span IDs=44fe8d7251a0322c; skipping clock skew adjustment"
+            ],
+            "process": {
+              "serviceName": "event-agent",
+              "tags": [
+                {
+                  "key": "service.instance.id",
+                  "type": "string",
+                  "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "dotnet"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0"
+                }
+              ]
+            },
+            "relativeStartTime": 0,
+            "depth": 0,
+            "hasChildren": true,
+            "childSpanIds": [
+              "7b2b0bbb001e58cc",
+              "ef7c5a1d27f53c14",
+              "b66e7c04b0e54f90",
+              "8d1b49b339b07b4f"
+            ]
+          }
+        }
+      ],
+      "startTime": 1761493087347126,
+      "duration": 961,
+      "tags": [
+        {
+          "key": "channel",
+          "type": "string",
+          "value": "Sysmon"
+        },
+        {
+          "key": "CommandLine",
+          "type": "string",
+          "value": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe\""
+        },
+        {
+          "key": "Company",
+          "type": "string",
+          "value": "Microsoft Corporation"
+        },
+        {
+          "key": "CurrentDirectory",
+          "type": "string",
+          "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+        },
+        {
+          "key": "Description",
+          "type": "string",
+          "value": "MSBuild.exe"
+        },
+        {
+          "key": "error",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "key": "EventName",
+          "type": "string",
+          "value": "ProcessCreate(rule:ProcessCreate)"
+        },
+        {
+          "key": "FileVersion",
+          "type": "string",
+          "value": "4.8.9032.0 built by: NET481REL1"
+        },
+        {
+          "key": "Hashes",
+          "type": "string",
+          "value": "SHA256=151D0125C20CDDE578D02DE3F2A56EB904870A887BB7F1C59BF61471DA231916"
+        },
+        {
+          "key": "ID",
+          "type": "int64",
+          "value": 1
+        },
+        {
+          "key": "Image",
+          "type": "string",
+          "value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe"
+        },
+        {
+          "key": "IntegrityLevel",
+          "type": "string",
+          "value": "High"
+        },
+        {
+          "key": "LogonGuid",
+          "type": "string",
+          "value": "8f5ab330-3c05-68fe-510b-040000000000"
+        },
+        {
+          "key": "LogonId",
+          "type": "int64",
+          "value": 265041
+        },
+        {
+          "key": "OriginalFileName",
+          "type": "string",
+          "value": "MSBuild.exe"
+        },
+        {
+          "key": "otel.scope.name",
+          "type": "string",
+          "value": "event.agent"
+        },
+        {
+          "key": "otel.status_code",
+          "type": "string",
+          "value": "ERROR"
+        },
+        {
+          "key": "otel.status_description",
+          "type": "string",
+          "value": "Sigma rules matched: 1"
+        },
+        {
+          "key": "ParentCommandLine",
+          "type": "string",
+          "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+        },
+        {
+          "key": "ParentImage",
+          "type": "string",
+          "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+        },
+        {
+          "key": "ParentProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405c-68fe-5901-000000000700"
+        },
+        {
+          "key": "ParentProcessId",
+          "type": "int64",
+          "value": 1620
+        },
+        {
+          "key": "ParentUser",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "ProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405d-68fe-5b01-000000000700"
+        },
+        {
+          "key": "ProcessId",
+          "type": "int64",
+          "value": 2552
+        },
+        {
+          "key": "Product",
+          "type": "string",
+          "value": "Microsoft® .NET Framework"
+        },
+        {
+          "key": "ProviderGuid",
+          "type": "string",
+          "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+        },
+        {
+          "key": "RuleName",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "sigma.alert",
+          "type": "string",
+          "value": "[\"33be4333-2c6b-44f4-ae28-102cdbde0a31\"]"
+        },
+        {
+          "key": "sigma.match_count",
+          "type": "int64",
+          "value": 1
+        },
+        {
+          "key": "sigma.rule_title",
+          "type": "string",
+          "value": "[\"Suspicious Msbuild Execution By Uncommon Parent Process\"]"
+        },
+        {
+          "key": "span.kind",
+          "type": "string",
+          "value": "internal"
+        },
+        {
+          "key": "sysmon.opcode",
+          "type": "string",
+          "value": "Info"
+        },
+        {
+          "key": "sysmon.ppid",
+          "type": "int64",
+          "value": 1620
+        },
+        {
+          "key": "TerminalSessionId",
+          "type": "int64",
+          "value": 1
+        },
+        {
+          "key": "TimeStamp",
+          "type": "string",
+          "value": "10/27/2025 00:38:05"
+        },
+        {
+          "key": "User",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "user_id",
+          "type": "string",
+          "value": "qwer"
+        },
+        {
+          "key": "UtcTime",
+          "type": "string",
+          "value": "2025-10-26 15:38:05.491"
+        }
+      ],
+      "logs": [],
+      "processID": "p1",
+      "warnings": [],
+      "process": {
+        "serviceName": "event-agent",
+        "tags": [
+          {
+            "key": "service.instance.id",
+            "type": "string",
+            "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "dotnet"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.12.0"
+          }
+        ]
+      },
+      "relativeStartTime": 3671,
+      "depth": 1,
+      "hasChildren": true,
+      "childSpanIds": [
+        "5ba07b1b2be6bc23",
+        "21923cb3455f697a",
+        "3898c40fdc7b5be7",
+        "28ff495e9d3587e4"
+      ]
+    },
+    {
+      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+      "spanID": "67afb21162903262",
+      "operationName": "0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe@evt:5",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+          "spanID": "44fe8d7251a0322c"
+        }
+      ],
+      "startTime": 1761493088392576,
+      "duration": 705,
+      "tags": [
+        {
+          "key": "channel",
+          "type": "string",
+          "value": "Sysmon"
+        },
+        {
+          "key": "EventName",
+          "type": "string",
+          "value": "Processterminated(rule:ProcessTerminate)"
+        },
+        {
+          "key": "ID",
+          "type": "int64",
+          "value": 5
+        },
+        {
+          "key": "Image",
+          "type": "string",
+          "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+        },
+        {
+          "key": "otel.scope.name",
+          "type": "string",
+          "value": "event.agent"
+        },
+        {
+          "key": "ProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405c-68fe-5901-000000000700"
+        },
+        {
+          "key": "ProcessId",
+          "type": "int64",
+          "value": 1620
+        },
+        {
+          "key": "ProviderGuid",
+          "type": "string",
+          "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+        },
+        {
+          "key": "RuleName",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "span.kind",
+          "type": "string",
+          "value": "internal"
+        },
+        {
+          "key": "sysmon.opcode",
+          "type": "string",
+          "value": "Info"
+        },
+        {
+          "key": "sysmon.ppid",
+          "type": "int64",
+          "value": 1608
+        },
+        {
+          "key": "TimeStamp",
+          "type": "string",
+          "value": "10/27/2025 00:38:06"
+        },
+        {
+          "key": "User",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "user_id",
+          "type": "string",
+          "value": "qwer"
+        },
+        {
+          "key": "UtcTime",
+          "type": "string",
+          "value": "2025-10-26 15:38:06.115"
+        }
+      ],
+      "logs": [],
+      "processID": "p1",
+      "warnings": [
+        "invalid parent span IDs=44fe8d7251a0322c; skipping clock skew adjustment"
+      ],
+      "process": {
+        "serviceName": "event-agent",
+        "tags": [
+          {
+            "key": "service.instance.id",
+            "type": "string",
+            "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "dotnet"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.12.0"
+          }
+        ]
+      },
+      "relativeStartTime": 1049121,
+      "depth": 0,
+      "hasChildren": false,
+      "childSpanIds": []
+    },
+    {
+      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+      "spanID": "8d1b49b339b07b4f",
+      "operationName": "MSBuild.exe@evt:1",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+          "spanID": "1c55f47adc4469b3",
+          "span": {
+            "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+            "spanID": "1c55f47adc4469b3",
+            "operationName": "0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe@evt:1",
+            "references": [
+              {
+                "refType": "CHILD_OF",
+                "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                "spanID": "44fe8d7251a0322c"
+              }
+            ],
+            "startTime": 1761493087343455,
+            "duration": 707,
+            "tags": [
+              {
+                "key": "channel",
+                "type": "string",
+                "value": "Sysmon"
+              },
+              {
+                "key": "CommandLine",
+                "type": "string",
+                "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+              },
+              {
+                "key": "Company",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "CurrentDirectory",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+              },
+              {
+                "key": "Description",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "error",
+                "type": "bool",
+                "value": true
+              },
+              {
+                "key": "EventName",
+                "type": "string",
+                "value": "ProcessCreate(rule:ProcessCreate)"
+              },
+              {
+                "key": "FileVersion",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "Hashes",
+                "type": "string",
+                "value": "SHA256=0738238CE5F24725197DD54BF3C74621E3B6B1523B7EBCADBEE811FA9DC2BCE1"
+              },
+              {
+                "key": "ID",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "Image",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+              },
+              {
+                "key": "IntegrityLevel",
+                "type": "string",
+                "value": "High"
+              },
+              {
+                "key": "LogonGuid",
+                "type": "string",
+                "value": "8f5ab330-3c05-68fe-510b-040000000000"
+              },
+              {
+                "key": "LogonId",
+                "type": "int64",
+                "value": 265041
+              },
+              {
+                "key": "OriginalFileName",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "otel.scope.name",
+                "type": "string",
+                "value": "event.agent"
+              },
+              {
+                "key": "otel.status_code",
+                "type": "string",
+                "value": "ERROR"
+              },
+              {
+                "key": "otel.status_description",
+                "type": "string",
+                "value": "Sigma rules matched: 1"
+              },
+              {
+                "key": "ParentCommandLine",
+                "type": "string",
+                "value": "C:\\WINDOWS\\Explorer.EXE"
+              },
+              {
+                "key": "ParentImage",
+                "type": "string",
+                "value": "C:\\Windows\\explorer.exe"
+              },
+              {
+                "key": "ParentProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-3c07-68fe-6600-000000000700"
+              },
+              {
+                "key": "ParentProcessId",
+                "type": "int64",
+                "value": 1608
+              },
+              {
+                "key": "ParentUser",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "ProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-405c-68fe-5901-000000000700"
+              },
+              {
+                "key": "ProcessId",
+                "type": "int64",
+                "value": 1620
+              },
+              {
+                "key": "Product",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "ProviderGuid",
+                "type": "string",
+                "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+              },
+              {
+                "key": "RuleName",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "sigma.alert",
+                "type": "string",
+                "value": "[\"dd8756e7-a3a0-4768-b47e-8f545d1a751c\"]"
+              },
+              {
+                "key": "sigma.match_count",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "sigma.rule_title",
+                "type": "string",
+                "value": "[\"Suspicious LNK Command-Line Padding with Whitespace Characters\"]"
+              },
+              {
+                "key": "span.kind",
+                "type": "string",
+                "value": "internal"
+              },
+              {
+                "key": "sysmon.opcode",
+                "type": "string",
+                "value": "Info"
+              },
+              {
+                "key": "sysmon.ppid",
+                "type": "int64",
+                "value": 1608
+              },
+              {
+                "key": "TerminalSessionId",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "TimeStamp",
+                "type": "string",
+                "value": "10/27/2025 00:38:04"
+              },
+              {
+                "key": "User",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "user_id",
+                "type": "string",
+                "value": "qwer"
+              },
+              {
+                "key": "UtcTime",
+                "type": "string",
+                "value": "2025-10-26 15:38:04.438"
+              }
+            ],
+            "logs": [],
+            "processID": "p1",
+            "warnings": [
+              "invalid parent span IDs=44fe8d7251a0322c; skipping clock skew adjustment"
+            ],
+            "process": {
+              "serviceName": "event-agent",
+              "tags": [
+                {
+                  "key": "service.instance.id",
+                  "type": "string",
+                  "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "dotnet"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0"
+                }
+              ]
+            },
+            "relativeStartTime": 0,
+            "depth": 0,
+            "hasChildren": true,
+            "childSpanIds": [
+              "7b2b0bbb001e58cc",
+              "ef7c5a1d27f53c14",
+              "b66e7c04b0e54f90",
+              "8d1b49b339b07b4f"
+            ]
+          }
+        }
+      ],
+      "startTime": 1761493087344216,
+      "duration": 2847,
+      "tags": [
+        {
+          "key": "channel",
+          "type": "string",
+          "value": "Sysmon"
+        },
+        {
+          "key": "CommandLine",
+          "type": "string",
+          "value": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe\""
+        },
+        {
+          "key": "Company",
+          "type": "string",
+          "value": "Microsoft Corporation"
+        },
+        {
+          "key": "CurrentDirectory",
+          "type": "string",
+          "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+        },
+        {
+          "key": "Description",
+          "type": "string",
+          "value": "MSBuild.exe"
+        },
+        {
+          "key": "error",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "key": "EventName",
+          "type": "string",
+          "value": "ProcessCreate(rule:ProcessCreate)"
+        },
+        {
+          "key": "FileVersion",
+          "type": "string",
+          "value": "4.8.9032.0 built by: NET481REL1"
+        },
+        {
+          "key": "Hashes",
+          "type": "string",
+          "value": "SHA256=151D0125C20CDDE578D02DE3F2A56EB904870A887BB7F1C59BF61471DA231916"
+        },
+        {
+          "key": "ID",
+          "type": "int64",
+          "value": 1
+        },
+        {
+          "key": "Image",
+          "type": "string",
+          "value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe"
+        },
+        {
+          "key": "IntegrityLevel",
+          "type": "string",
+          "value": "High"
+        },
+        {
+          "key": "LogonGuid",
+          "type": "string",
+          "value": "8f5ab330-3c05-68fe-510b-040000000000"
+        },
+        {
+          "key": "LogonId",
+          "type": "int64",
+          "value": 265041
+        },
+        {
+          "key": "OriginalFileName",
+          "type": "string",
+          "value": "MSBuild.exe"
+        },
+        {
+          "key": "otel.scope.name",
+          "type": "string",
+          "value": "event.agent"
+        },
+        {
+          "key": "otel.status_code",
+          "type": "string",
+          "value": "ERROR"
+        },
+        {
+          "key": "otel.status_description",
+          "type": "string",
+          "value": "Sigma rules matched: 1"
+        },
+        {
+          "key": "ParentCommandLine",
+          "type": "string",
+          "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+        },
+        {
+          "key": "ParentImage",
+          "type": "string",
+          "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+        },
+        {
+          "key": "ParentProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405c-68fe-5901-000000000700"
+        },
+        {
+          "key": "ParentProcessId",
+          "type": "int64",
+          "value": 1620
+        },
+        {
+          "key": "ParentUser",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "ProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405d-68fe-5a01-000000000700"
+        },
+        {
+          "key": "ProcessId",
+          "type": "int64",
+          "value": 3792
+        },
+        {
+          "key": "Product",
+          "type": "string",
+          "value": "Microsoft® .NET Framework"
+        },
+        {
+          "key": "ProviderGuid",
+          "type": "string",
+          "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+        },
+        {
+          "key": "RuleName",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "sigma.alert",
+          "type": "string",
+          "value": "[\"33be4333-2c6b-44f4-ae28-102cdbde0a31\"]"
+        },
+        {
+          "key": "sigma.match_count",
+          "type": "int64",
+          "value": 1
+        },
+        {
+          "key": "sigma.rule_title",
+          "type": "string",
+          "value": "[\"Suspicious Msbuild Execution By Uncommon Parent Process\"]"
+        },
+        {
+          "key": "span.kind",
+          "type": "string",
+          "value": "internal"
+        },
+        {
+          "key": "sysmon.opcode",
+          "type": "string",
+          "value": "Info"
+        },
+        {
+          "key": "sysmon.ppid",
+          "type": "int64",
+          "value": 1620
+        },
+        {
+          "key": "TerminalSessionId",
+          "type": "int64",
+          "value": 1
+        },
+        {
+          "key": "TimeStamp",
+          "type": "string",
+          "value": "10/27/2025 00:38:05"
+        },
+        {
+          "key": "User",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "user_id",
+          "type": "string",
+          "value": "qwer"
+        },
+        {
+          "key": "UtcTime",
+          "type": "string",
+          "value": "2025-10-26 15:38:05.479"
+        }
+      ],
+      "logs": [],
+      "processID": "p1",
+      "warnings": [],
+      "process": {
+        "serviceName": "event-agent",
+        "tags": [
+          {
+            "key": "service.instance.id",
+            "type": "string",
+            "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "dotnet"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.12.0"
+          }
+        ]
+      },
+      "relativeStartTime": 761,
+      "depth": 1,
+      "hasChildren": false,
+      "childSpanIds": []
+    },
+    {
+      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+      "spanID": "ef7c5a1d27f53c14",
+      "operationName": "MSBuild.exe@evt:5",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+          "spanID": "1c55f47adc4469b3",
+          "span": {
+            "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+            "spanID": "1c55f47adc4469b3",
+            "operationName": "0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe@evt:1",
+            "references": [
+              {
+                "refType": "CHILD_OF",
+                "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                "spanID": "44fe8d7251a0322c"
+              }
+            ],
+            "startTime": 1761493087343455,
+            "duration": 707,
+            "tags": [
+              {
+                "key": "channel",
+                "type": "string",
+                "value": "Sysmon"
+              },
+              {
+                "key": "CommandLine",
+                "type": "string",
+                "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+              },
+              {
+                "key": "Company",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "CurrentDirectory",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+              },
+              {
+                "key": "Description",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "error",
+                "type": "bool",
+                "value": true
+              },
+              {
+                "key": "EventName",
+                "type": "string",
+                "value": "ProcessCreate(rule:ProcessCreate)"
+              },
+              {
+                "key": "FileVersion",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "Hashes",
+                "type": "string",
+                "value": "SHA256=0738238CE5F24725197DD54BF3C74621E3B6B1523B7EBCADBEE811FA9DC2BCE1"
+              },
+              {
+                "key": "ID",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "Image",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+              },
+              {
+                "key": "IntegrityLevel",
+                "type": "string",
+                "value": "High"
+              },
+              {
+                "key": "LogonGuid",
+                "type": "string",
+                "value": "8f5ab330-3c05-68fe-510b-040000000000"
+              },
+              {
+                "key": "LogonId",
+                "type": "int64",
+                "value": 265041
+              },
+              {
+                "key": "OriginalFileName",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "otel.scope.name",
+                "type": "string",
+                "value": "event.agent"
+              },
+              {
+                "key": "otel.status_code",
+                "type": "string",
+                "value": "ERROR"
+              },
+              {
+                "key": "otel.status_description",
+                "type": "string",
+                "value": "Sigma rules matched: 1"
+              },
+              {
+                "key": "ParentCommandLine",
+                "type": "string",
+                "value": "C:\\WINDOWS\\Explorer.EXE"
+              },
+              {
+                "key": "ParentImage",
+                "type": "string",
+                "value": "C:\\Windows\\explorer.exe"
+              },
+              {
+                "key": "ParentProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-3c07-68fe-6600-000000000700"
+              },
+              {
+                "key": "ParentProcessId",
+                "type": "int64",
+                "value": 1608
+              },
+              {
+                "key": "ParentUser",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "ProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-405c-68fe-5901-000000000700"
+              },
+              {
+                "key": "ProcessId",
+                "type": "int64",
+                "value": 1620
+              },
+              {
+                "key": "Product",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "ProviderGuid",
+                "type": "string",
+                "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+              },
+              {
+                "key": "RuleName",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "sigma.alert",
+                "type": "string",
+                "value": "[\"dd8756e7-a3a0-4768-b47e-8f545d1a751c\"]"
+              },
+              {
+                "key": "sigma.match_count",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "sigma.rule_title",
+                "type": "string",
+                "value": "[\"Suspicious LNK Command-Line Padding with Whitespace Characters\"]"
+              },
+              {
+                "key": "span.kind",
+                "type": "string",
+                "value": "internal"
+              },
+              {
+                "key": "sysmon.opcode",
+                "type": "string",
+                "value": "Info"
+              },
+              {
+                "key": "sysmon.ppid",
+                "type": "int64",
+                "value": 1608
+              },
+              {
+                "key": "TerminalSessionId",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "TimeStamp",
+                "type": "string",
+                "value": "10/27/2025 00:38:04"
+              },
+              {
+                "key": "User",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "user_id",
+                "type": "string",
+                "value": "qwer"
+              },
+              {
+                "key": "UtcTime",
+                "type": "string",
+                "value": "2025-10-26 15:38:04.438"
+              }
+            ],
+            "logs": [],
+            "processID": "p1",
+            "warnings": [
+              "invalid parent span IDs=44fe8d7251a0322c; skipping clock skew adjustment"
+            ],
+            "process": {
+              "serviceName": "event-agent",
+              "tags": [
+                {
+                  "key": "service.instance.id",
+                  "type": "string",
+                  "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "dotnet"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0"
+                }
+              ]
+            },
+            "relativeStartTime": 0,
+            "depth": 0,
+            "hasChildren": true,
+            "childSpanIds": [
+              "7b2b0bbb001e58cc",
+              "ef7c5a1d27f53c14",
+              "b66e7c04b0e54f90",
+              "8d1b49b339b07b4f"
+            ]
+          }
+        }
+      ],
+      "startTime": 1761493087348102,
+      "duration": 175,
+      "tags": [
+        {
+          "key": "channel",
+          "type": "string",
+          "value": "Sysmon"
+        },
+        {
+          "key": "EventName",
+          "type": "string",
+          "value": "Processterminated(rule:ProcessTerminate)"
+        },
+        {
+          "key": "ID",
+          "type": "int64",
+          "value": 5
+        },
+        {
+          "key": "Image",
+          "type": "string",
+          "value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe"
+        },
+        {
+          "key": "otel.scope.name",
+          "type": "string",
+          "value": "event.agent"
+        },
+        {
+          "key": "ProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405d-68fe-5a01-000000000700"
+        },
+        {
+          "key": "ProcessId",
+          "type": "int64",
+          "value": 3792
+        },
+        {
+          "key": "ProviderGuid",
+          "type": "string",
+          "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+        },
+        {
+          "key": "RuleName",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "span.kind",
+          "type": "string",
+          "value": "internal"
+        },
+        {
+          "key": "sysmon.opcode",
+          "type": "string",
+          "value": "Info"
+        },
+        {
+          "key": "sysmon.ppid",
+          "type": "int64",
+          "value": 1620
+        },
+        {
+          "key": "TimeStamp",
+          "type": "string",
+          "value": "10/27/2025 00:38:05"
+        },
+        {
+          "key": "User",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "user_id",
+          "type": "string",
+          "value": "qwer"
+        },
+        {
+          "key": "UtcTime",
+          "type": "string",
+          "value": "2025-10-26 15:38:05.496"
+        }
+      ],
+      "logs": [],
+      "processID": "p1",
+      "warnings": [
+        "clock skew adjustment disabled; not applying calculated delta of -4.3804ms"
+      ],
+      "process": {
+        "serviceName": "event-agent",
+        "tags": [
+          {
+            "key": "service.instance.id",
+            "type": "string",
+            "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "dotnet"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.12.0"
+          }
+        ]
+      },
+      "relativeStartTime": 4647,
+      "depth": 1,
+      "hasChildren": false,
+      "childSpanIds": []
+    },
+    {
+      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+      "spanID": "28ff495e9d3587e4",
+      "operationName": "WerFault.exe@evt:1",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+          "spanID": "b66e7c04b0e54f90",
+          "span": {
+            "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+            "spanID": "b66e7c04b0e54f90",
+            "operationName": "MSBuild.exe@evt:1",
+            "references": [
+              {
+                "refType": "CHILD_OF",
+                "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                "spanID": "1c55f47adc4469b3",
+                "span": {
+                  "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                  "spanID": "1c55f47adc4469b3",
+                  "operationName": "0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe@evt:1",
+                  "references": [
+                    {
+                      "refType": "CHILD_OF",
+                      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                      "spanID": "44fe8d7251a0322c"
+                    }
+                  ],
+                  "startTime": 1761493087343455,
+                  "duration": 707,
+                  "tags": [
+                    {
+                      "key": "channel",
+                      "type": "string",
+                      "value": "Sysmon"
+                    },
+                    {
+                      "key": "CommandLine",
+                      "type": "string",
+                      "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+                    },
+                    {
+                      "key": "Company",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "CurrentDirectory",
+                      "type": "string",
+                      "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+                    },
+                    {
+                      "key": "Description",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "error",
+                      "type": "bool",
+                      "value": true
+                    },
+                    {
+                      "key": "EventName",
+                      "type": "string",
+                      "value": "ProcessCreate(rule:ProcessCreate)"
+                    },
+                    {
+                      "key": "FileVersion",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "Hashes",
+                      "type": "string",
+                      "value": "SHA256=0738238CE5F24725197DD54BF3C74621E3B6B1523B7EBCADBEE811FA9DC2BCE1"
+                    },
+                    {
+                      "key": "ID",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "Image",
+                      "type": "string",
+                      "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+                    },
+                    {
+                      "key": "IntegrityLevel",
+                      "type": "string",
+                      "value": "High"
+                    },
+                    {
+                      "key": "LogonGuid",
+                      "type": "string",
+                      "value": "8f5ab330-3c05-68fe-510b-040000000000"
+                    },
+                    {
+                      "key": "LogonId",
+                      "type": "int64",
+                      "value": 265041
+                    },
+                    {
+                      "key": "OriginalFileName",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "otel.scope.name",
+                      "type": "string",
+                      "value": "event.agent"
+                    },
+                    {
+                      "key": "otel.status_code",
+                      "type": "string",
+                      "value": "ERROR"
+                    },
+                    {
+                      "key": "otel.status_description",
+                      "type": "string",
+                      "value": "Sigma rules matched: 1"
+                    },
+                    {
+                      "key": "ParentCommandLine",
+                      "type": "string",
+                      "value": "C:\\WINDOWS\\Explorer.EXE"
+                    },
+                    {
+                      "key": "ParentImage",
+                      "type": "string",
+                      "value": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                      "key": "ParentProcessGuid",
+                      "type": "string",
+                      "value": "8f5ab330-3c07-68fe-6600-000000000700"
+                    },
+                    {
+                      "key": "ParentProcessId",
+                      "type": "int64",
+                      "value": 1608
+                    },
+                    {
+                      "key": "ParentUser",
+                      "type": "string",
+                      "value": "WIN-NNNI2M52DK2\\KISIA"
+                    },
+                    {
+                      "key": "ProcessGuid",
+                      "type": "string",
+                      "value": "8f5ab330-405c-68fe-5901-000000000700"
+                    },
+                    {
+                      "key": "ProcessId",
+                      "type": "int64",
+                      "value": 1620
+                    },
+                    {
+                      "key": "Product",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "ProviderGuid",
+                      "type": "string",
+                      "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                    },
+                    {
+                      "key": "RuleName",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "sigma.alert",
+                      "type": "string",
+                      "value": "[\"dd8756e7-a3a0-4768-b47e-8f545d1a751c\"]"
+                    },
+                    {
+                      "key": "sigma.match_count",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "sigma.rule_title",
+                      "type": "string",
+                      "value": "[\"Suspicious LNK Command-Line Padding with Whitespace Characters\"]"
+                    },
+                    {
+                      "key": "span.kind",
+                      "type": "string",
+                      "value": "internal"
+                    },
+                    {
+                      "key": "sysmon.opcode",
+                      "type": "string",
+                      "value": "Info"
+                    },
+                    {
+                      "key": "sysmon.ppid",
+                      "type": "int64",
+                      "value": 1608
+                    },
+                    {
+                      "key": "TerminalSessionId",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "TimeStamp",
+                      "type": "string",
+                      "value": "10/27/2025 00:38:04"
+                    },
+                    {
+                      "key": "User",
+                      "type": "string",
+                      "value": "WIN-NNNI2M52DK2\\KISIA"
+                    },
+                    {
+                      "key": "user_id",
+                      "type": "string",
+                      "value": "qwer"
+                    },
+                    {
+                      "key": "UtcTime",
+                      "type": "string",
+                      "value": "2025-10-26 15:38:04.438"
+                    }
+                  ],
+                  "logs": [],
+                  "processID": "p1",
+                  "warnings": [
+                    "invalid parent span IDs=44fe8d7251a0322c; skipping clock skew adjustment"
+                  ],
+                  "process": {
+                    "serviceName": "event-agent",
+                    "tags": [
+                      {
+                        "key": "service.instance.id",
+                        "type": "string",
+                        "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "dotnet"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0"
+                      }
+                    ]
+                  },
+                  "relativeStartTime": 0,
+                  "depth": 0,
+                  "hasChildren": true,
+                  "childSpanIds": [
+                    "7b2b0bbb001e58cc",
+                    "ef7c5a1d27f53c14",
+                    "b66e7c04b0e54f90",
+                    "8d1b49b339b07b4f"
+                  ]
+                }
+              }
+            ],
+            "startTime": 1761493087347126,
+            "duration": 961,
+            "tags": [
+              {
+                "key": "channel",
+                "type": "string",
+                "value": "Sysmon"
+              },
+              {
+                "key": "CommandLine",
+                "type": "string",
+                "value": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe\""
+              },
+              {
+                "key": "Company",
+                "type": "string",
+                "value": "Microsoft Corporation"
+              },
+              {
+                "key": "CurrentDirectory",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+              },
+              {
+                "key": "Description",
+                "type": "string",
+                "value": "MSBuild.exe"
+              },
+              {
+                "key": "error",
+                "type": "bool",
+                "value": true
+              },
+              {
+                "key": "EventName",
+                "type": "string",
+                "value": "ProcessCreate(rule:ProcessCreate)"
+              },
+              {
+                "key": "FileVersion",
+                "type": "string",
+                "value": "4.8.9032.0 built by: NET481REL1"
+              },
+              {
+                "key": "Hashes",
+                "type": "string",
+                "value": "SHA256=151D0125C20CDDE578D02DE3F2A56EB904870A887BB7F1C59BF61471DA231916"
+              },
+              {
+                "key": "ID",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "Image",
+                "type": "string",
+                "value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe"
+              },
+              {
+                "key": "IntegrityLevel",
+                "type": "string",
+                "value": "High"
+              },
+              {
+                "key": "LogonGuid",
+                "type": "string",
+                "value": "8f5ab330-3c05-68fe-510b-040000000000"
+              },
+              {
+                "key": "LogonId",
+                "type": "int64",
+                "value": 265041
+              },
+              {
+                "key": "OriginalFileName",
+                "type": "string",
+                "value": "MSBuild.exe"
+              },
+              {
+                "key": "otel.scope.name",
+                "type": "string",
+                "value": "event.agent"
+              },
+              {
+                "key": "otel.status_code",
+                "type": "string",
+                "value": "ERROR"
+              },
+              {
+                "key": "otel.status_description",
+                "type": "string",
+                "value": "Sigma rules matched: 1"
+              },
+              {
+                "key": "ParentCommandLine",
+                "type": "string",
+                "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+              },
+              {
+                "key": "ParentImage",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+              },
+              {
+                "key": "ParentProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-405c-68fe-5901-000000000700"
+              },
+              {
+                "key": "ParentProcessId",
+                "type": "int64",
+                "value": 1620
+              },
+              {
+                "key": "ParentUser",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "ProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-405d-68fe-5b01-000000000700"
+              },
+              {
+                "key": "ProcessId",
+                "type": "int64",
+                "value": 2552
+              },
+              {
+                "key": "Product",
+                "type": "string",
+                "value": "Microsoft® .NET Framework"
+              },
+              {
+                "key": "ProviderGuid",
+                "type": "string",
+                "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+              },
+              {
+                "key": "RuleName",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "sigma.alert",
+                "type": "string",
+                "value": "[\"33be4333-2c6b-44f4-ae28-102cdbde0a31\"]"
+              },
+              {
+                "key": "sigma.match_count",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "sigma.rule_title",
+                "type": "string",
+                "value": "[\"Suspicious Msbuild Execution By Uncommon Parent Process\"]"
+              },
+              {
+                "key": "span.kind",
+                "type": "string",
+                "value": "internal"
+              },
+              {
+                "key": "sysmon.opcode",
+                "type": "string",
+                "value": "Info"
+              },
+              {
+                "key": "sysmon.ppid",
+                "type": "int64",
+                "value": 1620
+              },
+              {
+                "key": "TerminalSessionId",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "TimeStamp",
+                "type": "string",
+                "value": "10/27/2025 00:38:05"
+              },
+              {
+                "key": "User",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "user_id",
+                "type": "string",
+                "value": "qwer"
+              },
+              {
+                "key": "UtcTime",
+                "type": "string",
+                "value": "2025-10-26 15:38:05.491"
+              }
+            ],
+            "logs": [],
+            "processID": "p1",
+            "warnings": [],
+            "process": {
+              "serviceName": "event-agent",
+              "tags": [
+                {
+                  "key": "service.instance.id",
+                  "type": "string",
+                  "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "dotnet"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0"
+                }
+              ]
+            },
+            "relativeStartTime": 3671,
+            "depth": 1,
+            "hasChildren": true,
+            "childSpanIds": [
+              "5ba07b1b2be6bc23",
+              "21923cb3455f697a",
+              "3898c40fdc7b5be7",
+              "28ff495e9d3587e4"
+            ]
+          }
+        }
+      ],
+      "startTime": 1761493088396082,
+      "duration": 478,
+      "tags": [
+        {
+          "key": "channel",
+          "type": "string",
+          "value": "Sysmon"
+        },
+        {
+          "key": "CommandLine",
+          "type": "string",
+          "value": "C:\\WINDOWS\\SysWOW64\\WerFault.exe -u -p 2552 -s 504"
+        },
+        {
+          "key": "Company",
+          "type": "string",
+          "value": "Microsoft Corporation"
+        },
+        {
+          "key": "CurrentDirectory",
+          "type": "string",
+          "value": "C:\\WINDOWS\\system32\\"
+        },
+        {
+          "key": "Description",
+          "type": "string",
+          "value": "Windows Problem Reporting"
+        },
+        {
+          "key": "EventName",
+          "type": "string",
+          "value": "ProcessCreate(rule:ProcessCreate)"
+        },
+        {
+          "key": "FileVersion",
+          "type": "string",
+          "value": "10.0.26100.1591 (WinBuild.160101.0800)"
+        },
+        {
+          "key": "Hashes",
+          "type": "string",
+          "value": "SHA256=D73ABAFB8968DF4C8C7773B07BD3772C2E0367E8C90CFED246A197291E539C13"
+        },
+        {
+          "key": "ID",
+          "type": "int64",
+          "value": 1
+        },
+        {
+          "key": "Image",
+          "type": "string",
+          "value": "C:\\Windows\\SysWOW64\\WerFault.exe"
+        },
+        {
+          "key": "IntegrityLevel",
+          "type": "string",
+          "value": "High"
+        },
+        {
+          "key": "LogonGuid",
+          "type": "string",
+          "value": "8f5ab330-3c05-68fe-510b-040000000000"
+        },
+        {
+          "key": "LogonId",
+          "type": "int64",
+          "value": 265041
+        },
+        {
+          "key": "OriginalFileName",
+          "type": "string",
+          "value": "WerFault.exe"
+        },
+        {
+          "key": "otel.scope.name",
+          "type": "string",
+          "value": "event.agent"
+        },
+        {
+          "key": "ParentCommandLine",
+          "type": "string",
+          "value": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe\""
+        },
+        {
+          "key": "ParentImage",
+          "type": "string",
+          "value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe"
+        },
+        {
+          "key": "ParentProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405d-68fe-5b01-000000000700"
+        },
+        {
+          "key": "ParentProcessId",
+          "type": "int64",
+          "value": 2552
+        },
+        {
+          "key": "ParentUser",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "ProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405e-68fe-5e01-000000000700"
+        },
+        {
+          "key": "ProcessId",
+          "type": "int64",
+          "value": 6596
+        },
+        {
+          "key": "Product",
+          "type": "string",
+          "value": "Microsoft® Windows® Operating System"
+        },
+        {
+          "key": "ProviderGuid",
+          "type": "string",
+          "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+        },
+        {
+          "key": "RuleName",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "span.kind",
+          "type": "string",
+          "value": "internal"
+        },
+        {
+          "key": "sysmon.opcode",
+          "type": "string",
+          "value": "Info"
+        },
+        {
+          "key": "sysmon.ppid",
+          "type": "int64",
+          "value": 2552
+        },
+        {
+          "key": "TerminalSessionId",
+          "type": "int64",
+          "value": 1
+        },
+        {
+          "key": "TimeStamp",
+          "type": "string",
+          "value": "10/27/2025 00:38:06"
+        },
+        {
+          "key": "User",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "user_id",
+          "type": "string",
+          "value": "qwer"
+        },
+        {
+          "key": "UtcTime",
+          "type": "string",
+          "value": "2025-10-26 15:38:06.326"
+        }
+      ],
+      "logs": [],
+      "processID": "p1",
+      "warnings": [
+        "clock skew adjustment disabled; not applying calculated delta of -1.04871425s"
+      ],
+      "process": {
+        "serviceName": "event-agent",
+        "tags": [
+          {
+            "key": "service.instance.id",
+            "type": "string",
+            "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "dotnet"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.12.0"
+          }
+        ]
+      },
+      "relativeStartTime": 1052627,
+      "depth": 2,
+      "hasChildren": false,
+      "childSpanIds": []
+    },
+    {
+      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+      "spanID": "3898c40fdc7b5be7",
+      "operationName": "WerFault.exe@evt:5",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+          "spanID": "b66e7c04b0e54f90",
+          "span": {
+            "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+            "spanID": "b66e7c04b0e54f90",
+            "operationName": "MSBuild.exe@evt:1",
+            "references": [
+              {
+                "refType": "CHILD_OF",
+                "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                "spanID": "1c55f47adc4469b3",
+                "span": {
+                  "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                  "spanID": "1c55f47adc4469b3",
+                  "operationName": "0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe@evt:1",
+                  "references": [
+                    {
+                      "refType": "CHILD_OF",
+                      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                      "spanID": "44fe8d7251a0322c"
+                    }
+                  ],
+                  "startTime": 1761493087343455,
+                  "duration": 707,
+                  "tags": [
+                    {
+                      "key": "channel",
+                      "type": "string",
+                      "value": "Sysmon"
+                    },
+                    {
+                      "key": "CommandLine",
+                      "type": "string",
+                      "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+                    },
+                    {
+                      "key": "Company",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "CurrentDirectory",
+                      "type": "string",
+                      "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+                    },
+                    {
+                      "key": "Description",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "error",
+                      "type": "bool",
+                      "value": true
+                    },
+                    {
+                      "key": "EventName",
+                      "type": "string",
+                      "value": "ProcessCreate(rule:ProcessCreate)"
+                    },
+                    {
+                      "key": "FileVersion",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "Hashes",
+                      "type": "string",
+                      "value": "SHA256=0738238CE5F24725197DD54BF3C74621E3B6B1523B7EBCADBEE811FA9DC2BCE1"
+                    },
+                    {
+                      "key": "ID",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "Image",
+                      "type": "string",
+                      "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+                    },
+                    {
+                      "key": "IntegrityLevel",
+                      "type": "string",
+                      "value": "High"
+                    },
+                    {
+                      "key": "LogonGuid",
+                      "type": "string",
+                      "value": "8f5ab330-3c05-68fe-510b-040000000000"
+                    },
+                    {
+                      "key": "LogonId",
+                      "type": "int64",
+                      "value": 265041
+                    },
+                    {
+                      "key": "OriginalFileName",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "otel.scope.name",
+                      "type": "string",
+                      "value": "event.agent"
+                    },
+                    {
+                      "key": "otel.status_code",
+                      "type": "string",
+                      "value": "ERROR"
+                    },
+                    {
+                      "key": "otel.status_description",
+                      "type": "string",
+                      "value": "Sigma rules matched: 1"
+                    },
+                    {
+                      "key": "ParentCommandLine",
+                      "type": "string",
+                      "value": "C:\\WINDOWS\\Explorer.EXE"
+                    },
+                    {
+                      "key": "ParentImage",
+                      "type": "string",
+                      "value": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                      "key": "ParentProcessGuid",
+                      "type": "string",
+                      "value": "8f5ab330-3c07-68fe-6600-000000000700"
+                    },
+                    {
+                      "key": "ParentProcessId",
+                      "type": "int64",
+                      "value": 1608
+                    },
+                    {
+                      "key": "ParentUser",
+                      "type": "string",
+                      "value": "WIN-NNNI2M52DK2\\KISIA"
+                    },
+                    {
+                      "key": "ProcessGuid",
+                      "type": "string",
+                      "value": "8f5ab330-405c-68fe-5901-000000000700"
+                    },
+                    {
+                      "key": "ProcessId",
+                      "type": "int64",
+                      "value": 1620
+                    },
+                    {
+                      "key": "Product",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "ProviderGuid",
+                      "type": "string",
+                      "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                    },
+                    {
+                      "key": "RuleName",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "sigma.alert",
+                      "type": "string",
+                      "value": "[\"dd8756e7-a3a0-4768-b47e-8f545d1a751c\"]"
+                    },
+                    {
+                      "key": "sigma.match_count",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "sigma.rule_title",
+                      "type": "string",
+                      "value": "[\"Suspicious LNK Command-Line Padding with Whitespace Characters\"]"
+                    },
+                    {
+                      "key": "span.kind",
+                      "type": "string",
+                      "value": "internal"
+                    },
+                    {
+                      "key": "sysmon.opcode",
+                      "type": "string",
+                      "value": "Info"
+                    },
+                    {
+                      "key": "sysmon.ppid",
+                      "type": "int64",
+                      "value": 1608
+                    },
+                    {
+                      "key": "TerminalSessionId",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "TimeStamp",
+                      "type": "string",
+                      "value": "10/27/2025 00:38:04"
+                    },
+                    {
+                      "key": "User",
+                      "type": "string",
+                      "value": "WIN-NNNI2M52DK2\\KISIA"
+                    },
+                    {
+                      "key": "user_id",
+                      "type": "string",
+                      "value": "qwer"
+                    },
+                    {
+                      "key": "UtcTime",
+                      "type": "string",
+                      "value": "2025-10-26 15:38:04.438"
+                    }
+                  ],
+                  "logs": [],
+                  "processID": "p1",
+                  "warnings": [
+                    "invalid parent span IDs=44fe8d7251a0322c; skipping clock skew adjustment"
+                  ],
+                  "process": {
+                    "serviceName": "event-agent",
+                    "tags": [
+                      {
+                        "key": "service.instance.id",
+                        "type": "string",
+                        "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "dotnet"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0"
+                      }
+                    ]
+                  },
+                  "relativeStartTime": 0,
+                  "depth": 0,
+                  "hasChildren": true,
+                  "childSpanIds": [
+                    "7b2b0bbb001e58cc",
+                    "ef7c5a1d27f53c14",
+                    "b66e7c04b0e54f90",
+                    "8d1b49b339b07b4f"
+                  ]
+                }
+              }
+            ],
+            "startTime": 1761493087347126,
+            "duration": 961,
+            "tags": [
+              {
+                "key": "channel",
+                "type": "string",
+                "value": "Sysmon"
+              },
+              {
+                "key": "CommandLine",
+                "type": "string",
+                "value": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe\""
+              },
+              {
+                "key": "Company",
+                "type": "string",
+                "value": "Microsoft Corporation"
+              },
+              {
+                "key": "CurrentDirectory",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+              },
+              {
+                "key": "Description",
+                "type": "string",
+                "value": "MSBuild.exe"
+              },
+              {
+                "key": "error",
+                "type": "bool",
+                "value": true
+              },
+              {
+                "key": "EventName",
+                "type": "string",
+                "value": "ProcessCreate(rule:ProcessCreate)"
+              },
+              {
+                "key": "FileVersion",
+                "type": "string",
+                "value": "4.8.9032.0 built by: NET481REL1"
+              },
+              {
+                "key": "Hashes",
+                "type": "string",
+                "value": "SHA256=151D0125C20CDDE578D02DE3F2A56EB904870A887BB7F1C59BF61471DA231916"
+              },
+              {
+                "key": "ID",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "Image",
+                "type": "string",
+                "value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe"
+              },
+              {
+                "key": "IntegrityLevel",
+                "type": "string",
+                "value": "High"
+              },
+              {
+                "key": "LogonGuid",
+                "type": "string",
+                "value": "8f5ab330-3c05-68fe-510b-040000000000"
+              },
+              {
+                "key": "LogonId",
+                "type": "int64",
+                "value": 265041
+              },
+              {
+                "key": "OriginalFileName",
+                "type": "string",
+                "value": "MSBuild.exe"
+              },
+              {
+                "key": "otel.scope.name",
+                "type": "string",
+                "value": "event.agent"
+              },
+              {
+                "key": "otel.status_code",
+                "type": "string",
+                "value": "ERROR"
+              },
+              {
+                "key": "otel.status_description",
+                "type": "string",
+                "value": "Sigma rules matched: 1"
+              },
+              {
+                "key": "ParentCommandLine",
+                "type": "string",
+                "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+              },
+              {
+                "key": "ParentImage",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+              },
+              {
+                "key": "ParentProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-405c-68fe-5901-000000000700"
+              },
+              {
+                "key": "ParentProcessId",
+                "type": "int64",
+                "value": 1620
+              },
+              {
+                "key": "ParentUser",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "ProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-405d-68fe-5b01-000000000700"
+              },
+              {
+                "key": "ProcessId",
+                "type": "int64",
+                "value": 2552
+              },
+              {
+                "key": "Product",
+                "type": "string",
+                "value": "Microsoft® .NET Framework"
+              },
+              {
+                "key": "ProviderGuid",
+                "type": "string",
+                "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+              },
+              {
+                "key": "RuleName",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "sigma.alert",
+                "type": "string",
+                "value": "[\"33be4333-2c6b-44f4-ae28-102cdbde0a31\"]"
+              },
+              {
+                "key": "sigma.match_count",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "sigma.rule_title",
+                "type": "string",
+                "value": "[\"Suspicious Msbuild Execution By Uncommon Parent Process\"]"
+              },
+              {
+                "key": "span.kind",
+                "type": "string",
+                "value": "internal"
+              },
+              {
+                "key": "sysmon.opcode",
+                "type": "string",
+                "value": "Info"
+              },
+              {
+                "key": "sysmon.ppid",
+                "type": "int64",
+                "value": 1620
+              },
+              {
+                "key": "TerminalSessionId",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "TimeStamp",
+                "type": "string",
+                "value": "10/27/2025 00:38:05"
+              },
+              {
+                "key": "User",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "user_id",
+                "type": "string",
+                "value": "qwer"
+              },
+              {
+                "key": "UtcTime",
+                "type": "string",
+                "value": "2025-10-26 15:38:05.491"
+              }
+            ],
+            "logs": [],
+            "processID": "p1",
+            "warnings": [],
+            "process": {
+              "serviceName": "event-agent",
+              "tags": [
+                {
+                  "key": "service.instance.id",
+                  "type": "string",
+                  "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "dotnet"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0"
+                }
+              ]
+            },
+            "relativeStartTime": 3671,
+            "depth": 1,
+            "hasChildren": true,
+            "childSpanIds": [
+              "5ba07b1b2be6bc23",
+              "21923cb3455f697a",
+              "3898c40fdc7b5be7",
+              "28ff495e9d3587e4"
+            ]
+          }
+        }
+      ],
+      "startTime": 1761493088396598,
+      "duration": 577,
+      "tags": [
+        {
+          "key": "channel",
+          "type": "string",
+          "value": "Sysmon"
+        },
+        {
+          "key": "EventName",
+          "type": "string",
+          "value": "Processterminated(rule:ProcessTerminate)"
+        },
+        {
+          "key": "ID",
+          "type": "int64",
+          "value": 5
+        },
+        {
+          "key": "Image",
+          "type": "string",
+          "value": "C:\\Windows\\SysWOW64\\WerFault.exe"
+        },
+        {
+          "key": "otel.scope.name",
+          "type": "string",
+          "value": "event.agent"
+        },
+        {
+          "key": "ProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405e-68fe-5e01-000000000700"
+        },
+        {
+          "key": "ProcessId",
+          "type": "int64",
+          "value": 6596
+        },
+        {
+          "key": "ProviderGuid",
+          "type": "string",
+          "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+        },
+        {
+          "key": "RuleName",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "span.kind",
+          "type": "string",
+          "value": "internal"
+        },
+        {
+          "key": "sysmon.opcode",
+          "type": "string",
+          "value": "Info"
+        },
+        {
+          "key": "sysmon.ppid",
+          "type": "int64",
+          "value": 2552
+        },
+        {
+          "key": "TimeStamp",
+          "type": "string",
+          "value": "10/27/2025 00:38:06"
+        },
+        {
+          "key": "User",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "user_id",
+          "type": "string",
+          "value": "qwer"
+        },
+        {
+          "key": "UtcTime",
+          "type": "string",
+          "value": "2025-10-26 15:38:06.863"
+        }
+      ],
+      "logs": [],
+      "processID": "p1",
+      "warnings": [
+        "clock skew adjustment disabled; not applying calculated delta of -1.04927995s"
+      ],
+      "process": {
+        "serviceName": "event-agent",
+        "tags": [
+          {
+            "key": "service.instance.id",
+            "type": "string",
+            "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "dotnet"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.12.0"
+          }
+        ]
+      },
+      "relativeStartTime": 1053143,
+      "depth": 2,
+      "hasChildren": false,
+      "childSpanIds": []
+    },
+    {
+      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+      "spanID": "21923cb3455f697a",
+      "operationName": "WerFault.exe@evt:1",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+          "spanID": "b66e7c04b0e54f90",
+          "span": {
+            "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+            "spanID": "b66e7c04b0e54f90",
+            "operationName": "MSBuild.exe@evt:1",
+            "references": [
+              {
+                "refType": "CHILD_OF",
+                "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                "spanID": "1c55f47adc4469b3",
+                "span": {
+                  "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                  "spanID": "1c55f47adc4469b3",
+                  "operationName": "0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe@evt:1",
+                  "references": [
+                    {
+                      "refType": "CHILD_OF",
+                      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                      "spanID": "44fe8d7251a0322c"
+                    }
+                  ],
+                  "startTime": 1761493087343455,
+                  "duration": 707,
+                  "tags": [
+                    {
+                      "key": "channel",
+                      "type": "string",
+                      "value": "Sysmon"
+                    },
+                    {
+                      "key": "CommandLine",
+                      "type": "string",
+                      "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+                    },
+                    {
+                      "key": "Company",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "CurrentDirectory",
+                      "type": "string",
+                      "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+                    },
+                    {
+                      "key": "Description",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "error",
+                      "type": "bool",
+                      "value": true
+                    },
+                    {
+                      "key": "EventName",
+                      "type": "string",
+                      "value": "ProcessCreate(rule:ProcessCreate)"
+                    },
+                    {
+                      "key": "FileVersion",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "Hashes",
+                      "type": "string",
+                      "value": "SHA256=0738238CE5F24725197DD54BF3C74621E3B6B1523B7EBCADBEE811FA9DC2BCE1"
+                    },
+                    {
+                      "key": "ID",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "Image",
+                      "type": "string",
+                      "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+                    },
+                    {
+                      "key": "IntegrityLevel",
+                      "type": "string",
+                      "value": "High"
+                    },
+                    {
+                      "key": "LogonGuid",
+                      "type": "string",
+                      "value": "8f5ab330-3c05-68fe-510b-040000000000"
+                    },
+                    {
+                      "key": "LogonId",
+                      "type": "int64",
+                      "value": 265041
+                    },
+                    {
+                      "key": "OriginalFileName",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "otel.scope.name",
+                      "type": "string",
+                      "value": "event.agent"
+                    },
+                    {
+                      "key": "otel.status_code",
+                      "type": "string",
+                      "value": "ERROR"
+                    },
+                    {
+                      "key": "otel.status_description",
+                      "type": "string",
+                      "value": "Sigma rules matched: 1"
+                    },
+                    {
+                      "key": "ParentCommandLine",
+                      "type": "string",
+                      "value": "C:\\WINDOWS\\Explorer.EXE"
+                    },
+                    {
+                      "key": "ParentImage",
+                      "type": "string",
+                      "value": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                      "key": "ParentProcessGuid",
+                      "type": "string",
+                      "value": "8f5ab330-3c07-68fe-6600-000000000700"
+                    },
+                    {
+                      "key": "ParentProcessId",
+                      "type": "int64",
+                      "value": 1608
+                    },
+                    {
+                      "key": "ParentUser",
+                      "type": "string",
+                      "value": "WIN-NNNI2M52DK2\\KISIA"
+                    },
+                    {
+                      "key": "ProcessGuid",
+                      "type": "string",
+                      "value": "8f5ab330-405c-68fe-5901-000000000700"
+                    },
+                    {
+                      "key": "ProcessId",
+                      "type": "int64",
+                      "value": 1620
+                    },
+                    {
+                      "key": "Product",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "ProviderGuid",
+                      "type": "string",
+                      "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                    },
+                    {
+                      "key": "RuleName",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "sigma.alert",
+                      "type": "string",
+                      "value": "[\"dd8756e7-a3a0-4768-b47e-8f545d1a751c\"]"
+                    },
+                    {
+                      "key": "sigma.match_count",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "sigma.rule_title",
+                      "type": "string",
+                      "value": "[\"Suspicious LNK Command-Line Padding with Whitespace Characters\"]"
+                    },
+                    {
+                      "key": "span.kind",
+                      "type": "string",
+                      "value": "internal"
+                    },
+                    {
+                      "key": "sysmon.opcode",
+                      "type": "string",
+                      "value": "Info"
+                    },
+                    {
+                      "key": "sysmon.ppid",
+                      "type": "int64",
+                      "value": 1608
+                    },
+                    {
+                      "key": "TerminalSessionId",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "TimeStamp",
+                      "type": "string",
+                      "value": "10/27/2025 00:38:04"
+                    },
+                    {
+                      "key": "User",
+                      "type": "string",
+                      "value": "WIN-NNNI2M52DK2\\KISIA"
+                    },
+                    {
+                      "key": "user_id",
+                      "type": "string",
+                      "value": "qwer"
+                    },
+                    {
+                      "key": "UtcTime",
+                      "type": "string",
+                      "value": "2025-10-26 15:38:04.438"
+                    }
+                  ],
+                  "logs": [],
+                  "processID": "p1",
+                  "warnings": [
+                    "invalid parent span IDs=44fe8d7251a0322c; skipping clock skew adjustment"
+                  ],
+                  "process": {
+                    "serviceName": "event-agent",
+                    "tags": [
+                      {
+                        "key": "service.instance.id",
+                        "type": "string",
+                        "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "dotnet"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0"
+                      }
+                    ]
+                  },
+                  "relativeStartTime": 0,
+                  "depth": 0,
+                  "hasChildren": true,
+                  "childSpanIds": [
+                    "7b2b0bbb001e58cc",
+                    "ef7c5a1d27f53c14",
+                    "b66e7c04b0e54f90",
+                    "8d1b49b339b07b4f"
+                  ]
+                }
+              }
+            ],
+            "startTime": 1761493087347126,
+            "duration": 961,
+            "tags": [
+              {
+                "key": "channel",
+                "type": "string",
+                "value": "Sysmon"
+              },
+              {
+                "key": "CommandLine",
+                "type": "string",
+                "value": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe\""
+              },
+              {
+                "key": "Company",
+                "type": "string",
+                "value": "Microsoft Corporation"
+              },
+              {
+                "key": "CurrentDirectory",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+              },
+              {
+                "key": "Description",
+                "type": "string",
+                "value": "MSBuild.exe"
+              },
+              {
+                "key": "error",
+                "type": "bool",
+                "value": true
+              },
+              {
+                "key": "EventName",
+                "type": "string",
+                "value": "ProcessCreate(rule:ProcessCreate)"
+              },
+              {
+                "key": "FileVersion",
+                "type": "string",
+                "value": "4.8.9032.0 built by: NET481REL1"
+              },
+              {
+                "key": "Hashes",
+                "type": "string",
+                "value": "SHA256=151D0125C20CDDE578D02DE3F2A56EB904870A887BB7F1C59BF61471DA231916"
+              },
+              {
+                "key": "ID",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "Image",
+                "type": "string",
+                "value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe"
+              },
+              {
+                "key": "IntegrityLevel",
+                "type": "string",
+                "value": "High"
+              },
+              {
+                "key": "LogonGuid",
+                "type": "string",
+                "value": "8f5ab330-3c05-68fe-510b-040000000000"
+              },
+              {
+                "key": "LogonId",
+                "type": "int64",
+                "value": 265041
+              },
+              {
+                "key": "OriginalFileName",
+                "type": "string",
+                "value": "MSBuild.exe"
+              },
+              {
+                "key": "otel.scope.name",
+                "type": "string",
+                "value": "event.agent"
+              },
+              {
+                "key": "otel.status_code",
+                "type": "string",
+                "value": "ERROR"
+              },
+              {
+                "key": "otel.status_description",
+                "type": "string",
+                "value": "Sigma rules matched: 1"
+              },
+              {
+                "key": "ParentCommandLine",
+                "type": "string",
+                "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+              },
+              {
+                "key": "ParentImage",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+              },
+              {
+                "key": "ParentProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-405c-68fe-5901-000000000700"
+              },
+              {
+                "key": "ParentProcessId",
+                "type": "int64",
+                "value": 1620
+              },
+              {
+                "key": "ParentUser",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "ProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-405d-68fe-5b01-000000000700"
+              },
+              {
+                "key": "ProcessId",
+                "type": "int64",
+                "value": 2552
+              },
+              {
+                "key": "Product",
+                "type": "string",
+                "value": "Microsoft® .NET Framework"
+              },
+              {
+                "key": "ProviderGuid",
+                "type": "string",
+                "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+              },
+              {
+                "key": "RuleName",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "sigma.alert",
+                "type": "string",
+                "value": "[\"33be4333-2c6b-44f4-ae28-102cdbde0a31\"]"
+              },
+              {
+                "key": "sigma.match_count",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "sigma.rule_title",
+                "type": "string",
+                "value": "[\"Suspicious Msbuild Execution By Uncommon Parent Process\"]"
+              },
+              {
+                "key": "span.kind",
+                "type": "string",
+                "value": "internal"
+              },
+              {
+                "key": "sysmon.opcode",
+                "type": "string",
+                "value": "Info"
+              },
+              {
+                "key": "sysmon.ppid",
+                "type": "int64",
+                "value": 1620
+              },
+              {
+                "key": "TerminalSessionId",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "TimeStamp",
+                "type": "string",
+                "value": "10/27/2025 00:38:05"
+              },
+              {
+                "key": "User",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "user_id",
+                "type": "string",
+                "value": "qwer"
+              },
+              {
+                "key": "UtcTime",
+                "type": "string",
+                "value": "2025-10-26 15:38:05.491"
+              }
+            ],
+            "logs": [],
+            "processID": "p1",
+            "warnings": [],
+            "process": {
+              "serviceName": "event-agent",
+              "tags": [
+                {
+                  "key": "service.instance.id",
+                  "type": "string",
+                  "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "dotnet"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0"
+                }
+              ]
+            },
+            "relativeStartTime": 3671,
+            "depth": 1,
+            "hasChildren": true,
+            "childSpanIds": [
+              "5ba07b1b2be6bc23",
+              "21923cb3455f697a",
+              "3898c40fdc7b5be7",
+              "28ff495e9d3587e4"
+            ]
+          }
+        }
+      ],
+      "startTime": 1761493088398738,
+      "duration": 345,
+      "tags": [
+        {
+          "key": "channel",
+          "type": "string",
+          "value": "Sysmon"
+        },
+        {
+          "key": "CommandLine",
+          "type": "string",
+          "value": "C:\\WINDOWS\\SysWOW64\\WerFault.exe -u -p 2552 -s 548"
+        },
+        {
+          "key": "Company",
+          "type": "string",
+          "value": "Microsoft Corporation"
+        },
+        {
+          "key": "CurrentDirectory",
+          "type": "string",
+          "value": "C:\\WINDOWS\\system32\\"
+        },
+        {
+          "key": "Description",
+          "type": "string",
+          "value": "Windows Problem Reporting"
+        },
+        {
+          "key": "EventName",
+          "type": "string",
+          "value": "ProcessCreate(rule:ProcessCreate)"
+        },
+        {
+          "key": "FileVersion",
+          "type": "string",
+          "value": "10.0.26100.1591 (WinBuild.160101.0800)"
+        },
+        {
+          "key": "Hashes",
+          "type": "string",
+          "value": "SHA256=D73ABAFB8968DF4C8C7773B07BD3772C2E0367E8C90CFED246A197291E539C13"
+        },
+        {
+          "key": "ID",
+          "type": "int64",
+          "value": 1
+        },
+        {
+          "key": "Image",
+          "type": "string",
+          "value": "C:\\Windows\\SysWOW64\\WerFault.exe"
+        },
+        {
+          "key": "IntegrityLevel",
+          "type": "string",
+          "value": "High"
+        },
+        {
+          "key": "LogonGuid",
+          "type": "string",
+          "value": "8f5ab330-3c05-68fe-510b-040000000000"
+        },
+        {
+          "key": "LogonId",
+          "type": "int64",
+          "value": 265041
+        },
+        {
+          "key": "OriginalFileName",
+          "type": "string",
+          "value": "WerFault.exe"
+        },
+        {
+          "key": "otel.scope.name",
+          "type": "string",
+          "value": "event.agent"
+        },
+        {
+          "key": "ParentCommandLine",
+          "type": "string",
+          "value": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe\""
+        },
+        {
+          "key": "ParentImage",
+          "type": "string",
+          "value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe"
+        },
+        {
+          "key": "ParentProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405d-68fe-5b01-000000000700"
+        },
+        {
+          "key": "ParentProcessId",
+          "type": "int64",
+          "value": 2552
+        },
+        {
+          "key": "ParentUser",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "ProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405e-68fe-6201-000000000700"
+        },
+        {
+          "key": "ProcessId",
+          "type": "int64",
+          "value": 1100
+        },
+        {
+          "key": "Product",
+          "type": "string",
+          "value": "Microsoft® Windows® Operating System"
+        },
+        {
+          "key": "ProviderGuid",
+          "type": "string",
+          "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+        },
+        {
+          "key": "RuleName",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "span.kind",
+          "type": "string",
+          "value": "internal"
+        },
+        {
+          "key": "sysmon.opcode",
+          "type": "string",
+          "value": "Info"
+        },
+        {
+          "key": "sysmon.ppid",
+          "type": "int64",
+          "value": 2552
+        },
+        {
+          "key": "TerminalSessionId",
+          "type": "int64",
+          "value": 1
+        },
+        {
+          "key": "TimeStamp",
+          "type": "string",
+          "value": "10/27/2025 00:38:06"
+        },
+        {
+          "key": "User",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "user_id",
+          "type": "string",
+          "value": "qwer"
+        },
+        {
+          "key": "UtcTime",
+          "type": "string",
+          "value": "2025-10-26 15:38:06.932"
+        }
+      ],
+      "logs": [],
+      "processID": "p1",
+      "warnings": [
+        "clock skew adjustment disabled; not applying calculated delta of -1.0513032s"
+      ],
+      "process": {
+        "serviceName": "event-agent",
+        "tags": [
+          {
+            "key": "service.instance.id",
+            "type": "string",
+            "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "dotnet"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.12.0"
+          }
+        ]
+      },
+      "relativeStartTime": 1055283,
+      "depth": 2,
+      "hasChildren": false,
+      "childSpanIds": []
+    },
+    {
+      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+      "spanID": "5ba07b1b2be6bc23",
+      "operationName": "WerFault.exe@evt:5",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+          "spanID": "b66e7c04b0e54f90",
+          "span": {
+            "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+            "spanID": "b66e7c04b0e54f90",
+            "operationName": "MSBuild.exe@evt:1",
+            "references": [
+              {
+                "refType": "CHILD_OF",
+                "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                "spanID": "1c55f47adc4469b3",
+                "span": {
+                  "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                  "spanID": "1c55f47adc4469b3",
+                  "operationName": "0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe@evt:1",
+                  "references": [
+                    {
+                      "refType": "CHILD_OF",
+                      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                      "spanID": "44fe8d7251a0322c"
+                    }
+                  ],
+                  "startTime": 1761493087343455,
+                  "duration": 707,
+                  "tags": [
+                    {
+                      "key": "channel",
+                      "type": "string",
+                      "value": "Sysmon"
+                    },
+                    {
+                      "key": "CommandLine",
+                      "type": "string",
+                      "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+                    },
+                    {
+                      "key": "Company",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "CurrentDirectory",
+                      "type": "string",
+                      "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+                    },
+                    {
+                      "key": "Description",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "error",
+                      "type": "bool",
+                      "value": true
+                    },
+                    {
+                      "key": "EventName",
+                      "type": "string",
+                      "value": "ProcessCreate(rule:ProcessCreate)"
+                    },
+                    {
+                      "key": "FileVersion",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "Hashes",
+                      "type": "string",
+                      "value": "SHA256=0738238CE5F24725197DD54BF3C74621E3B6B1523B7EBCADBEE811FA9DC2BCE1"
+                    },
+                    {
+                      "key": "ID",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "Image",
+                      "type": "string",
+                      "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+                    },
+                    {
+                      "key": "IntegrityLevel",
+                      "type": "string",
+                      "value": "High"
+                    },
+                    {
+                      "key": "LogonGuid",
+                      "type": "string",
+                      "value": "8f5ab330-3c05-68fe-510b-040000000000"
+                    },
+                    {
+                      "key": "LogonId",
+                      "type": "int64",
+                      "value": 265041
+                    },
+                    {
+                      "key": "OriginalFileName",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "otel.scope.name",
+                      "type": "string",
+                      "value": "event.agent"
+                    },
+                    {
+                      "key": "otel.status_code",
+                      "type": "string",
+                      "value": "ERROR"
+                    },
+                    {
+                      "key": "otel.status_description",
+                      "type": "string",
+                      "value": "Sigma rules matched: 1"
+                    },
+                    {
+                      "key": "ParentCommandLine",
+                      "type": "string",
+                      "value": "C:\\WINDOWS\\Explorer.EXE"
+                    },
+                    {
+                      "key": "ParentImage",
+                      "type": "string",
+                      "value": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                      "key": "ParentProcessGuid",
+                      "type": "string",
+                      "value": "8f5ab330-3c07-68fe-6600-000000000700"
+                    },
+                    {
+                      "key": "ParentProcessId",
+                      "type": "int64",
+                      "value": 1608
+                    },
+                    {
+                      "key": "ParentUser",
+                      "type": "string",
+                      "value": "WIN-NNNI2M52DK2\\KISIA"
+                    },
+                    {
+                      "key": "ProcessGuid",
+                      "type": "string",
+                      "value": "8f5ab330-405c-68fe-5901-000000000700"
+                    },
+                    {
+                      "key": "ProcessId",
+                      "type": "int64",
+                      "value": 1620
+                    },
+                    {
+                      "key": "Product",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "ProviderGuid",
+                      "type": "string",
+                      "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+                    },
+                    {
+                      "key": "RuleName",
+                      "type": "string",
+                      "value": "-"
+                    },
+                    {
+                      "key": "sigma.alert",
+                      "type": "string",
+                      "value": "[\"dd8756e7-a3a0-4768-b47e-8f545d1a751c\"]"
+                    },
+                    {
+                      "key": "sigma.match_count",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "sigma.rule_title",
+                      "type": "string",
+                      "value": "[\"Suspicious LNK Command-Line Padding with Whitespace Characters\"]"
+                    },
+                    {
+                      "key": "span.kind",
+                      "type": "string",
+                      "value": "internal"
+                    },
+                    {
+                      "key": "sysmon.opcode",
+                      "type": "string",
+                      "value": "Info"
+                    },
+                    {
+                      "key": "sysmon.ppid",
+                      "type": "int64",
+                      "value": 1608
+                    },
+                    {
+                      "key": "TerminalSessionId",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "TimeStamp",
+                      "type": "string",
+                      "value": "10/27/2025 00:38:04"
+                    },
+                    {
+                      "key": "User",
+                      "type": "string",
+                      "value": "WIN-NNNI2M52DK2\\KISIA"
+                    },
+                    {
+                      "key": "user_id",
+                      "type": "string",
+                      "value": "qwer"
+                    },
+                    {
+                      "key": "UtcTime",
+                      "type": "string",
+                      "value": "2025-10-26 15:38:04.438"
+                    }
+                  ],
+                  "logs": [],
+                  "processID": "p1",
+                  "warnings": [
+                    "invalid parent span IDs=44fe8d7251a0322c; skipping clock skew adjustment"
+                  ],
+                  "process": {
+                    "serviceName": "event-agent",
+                    "tags": [
+                      {
+                        "key": "service.instance.id",
+                        "type": "string",
+                        "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "dotnet"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0"
+                      }
+                    ]
+                  },
+                  "relativeStartTime": 0,
+                  "depth": 0,
+                  "hasChildren": true,
+                  "childSpanIds": [
+                    "7b2b0bbb001e58cc",
+                    "ef7c5a1d27f53c14",
+                    "b66e7c04b0e54f90",
+                    "8d1b49b339b07b4f"
+                  ]
+                }
+              }
+            ],
+            "startTime": 1761493087347126,
+            "duration": 961,
+            "tags": [
+              {
+                "key": "channel",
+                "type": "string",
+                "value": "Sysmon"
+              },
+              {
+                "key": "CommandLine",
+                "type": "string",
+                "value": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe\""
+              },
+              {
+                "key": "Company",
+                "type": "string",
+                "value": "Microsoft Corporation"
+              },
+              {
+                "key": "CurrentDirectory",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+              },
+              {
+                "key": "Description",
+                "type": "string",
+                "value": "MSBuild.exe"
+              },
+              {
+                "key": "error",
+                "type": "bool",
+                "value": true
+              },
+              {
+                "key": "EventName",
+                "type": "string",
+                "value": "ProcessCreate(rule:ProcessCreate)"
+              },
+              {
+                "key": "FileVersion",
+                "type": "string",
+                "value": "4.8.9032.0 built by: NET481REL1"
+              },
+              {
+                "key": "Hashes",
+                "type": "string",
+                "value": "SHA256=151D0125C20CDDE578D02DE3F2A56EB904870A887BB7F1C59BF61471DA231916"
+              },
+              {
+                "key": "ID",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "Image",
+                "type": "string",
+                "value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe"
+              },
+              {
+                "key": "IntegrityLevel",
+                "type": "string",
+                "value": "High"
+              },
+              {
+                "key": "LogonGuid",
+                "type": "string",
+                "value": "8f5ab330-3c05-68fe-510b-040000000000"
+              },
+              {
+                "key": "LogonId",
+                "type": "int64",
+                "value": 265041
+              },
+              {
+                "key": "OriginalFileName",
+                "type": "string",
+                "value": "MSBuild.exe"
+              },
+              {
+                "key": "otel.scope.name",
+                "type": "string",
+                "value": "event.agent"
+              },
+              {
+                "key": "otel.status_code",
+                "type": "string",
+                "value": "ERROR"
+              },
+              {
+                "key": "otel.status_description",
+                "type": "string",
+                "value": "Sigma rules matched: 1"
+              },
+              {
+                "key": "ParentCommandLine",
+                "type": "string",
+                "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+              },
+              {
+                "key": "ParentImage",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+              },
+              {
+                "key": "ParentProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-405c-68fe-5901-000000000700"
+              },
+              {
+                "key": "ParentProcessId",
+                "type": "int64",
+                "value": 1620
+              },
+              {
+                "key": "ParentUser",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "ProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-405d-68fe-5b01-000000000700"
+              },
+              {
+                "key": "ProcessId",
+                "type": "int64",
+                "value": 2552
+              },
+              {
+                "key": "Product",
+                "type": "string",
+                "value": "Microsoft® .NET Framework"
+              },
+              {
+                "key": "ProviderGuid",
+                "type": "string",
+                "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+              },
+              {
+                "key": "RuleName",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "sigma.alert",
+                "type": "string",
+                "value": "[\"33be4333-2c6b-44f4-ae28-102cdbde0a31\"]"
+              },
+              {
+                "key": "sigma.match_count",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "sigma.rule_title",
+                "type": "string",
+                "value": "[\"Suspicious Msbuild Execution By Uncommon Parent Process\"]"
+              },
+              {
+                "key": "span.kind",
+                "type": "string",
+                "value": "internal"
+              },
+              {
+                "key": "sysmon.opcode",
+                "type": "string",
+                "value": "Info"
+              },
+              {
+                "key": "sysmon.ppid",
+                "type": "int64",
+                "value": 1620
+              },
+              {
+                "key": "TerminalSessionId",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "TimeStamp",
+                "type": "string",
+                "value": "10/27/2025 00:38:05"
+              },
+              {
+                "key": "User",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "user_id",
+                "type": "string",
+                "value": "qwer"
+              },
+              {
+                "key": "UtcTime",
+                "type": "string",
+                "value": "2025-10-26 15:38:05.491"
+              }
+            ],
+            "logs": [],
+            "processID": "p1",
+            "warnings": [],
+            "process": {
+              "serviceName": "event-agent",
+              "tags": [
+                {
+                  "key": "service.instance.id",
+                  "type": "string",
+                  "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "dotnet"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0"
+                }
+              ]
+            },
+            "relativeStartTime": 3671,
+            "depth": 1,
+            "hasChildren": true,
+            "childSpanIds": [
+              "5ba07b1b2be6bc23",
+              "21923cb3455f697a",
+              "3898c40fdc7b5be7",
+              "28ff495e9d3587e4"
+            ]
+          }
+        }
+      ],
+      "startTime": 1761493089479656,
+      "duration": 2274,
+      "tags": [
+        {
+          "key": "channel",
+          "type": "string",
+          "value": "Sysmon"
+        },
+        {
+          "key": "EventName",
+          "type": "string",
+          "value": "Processterminated(rule:ProcessTerminate)"
+        },
+        {
+          "key": "ID",
+          "type": "int64",
+          "value": 5
+        },
+        {
+          "key": "Image",
+          "type": "string",
+          "value": "C:\\Windows\\SysWOW64\\WerFault.exe"
+        },
+        {
+          "key": "otel.scope.name",
+          "type": "string",
+          "value": "event.agent"
+        },
+        {
+          "key": "ProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405e-68fe-6201-000000000700"
+        },
+        {
+          "key": "ProcessId",
+          "type": "int64",
+          "value": 1100
+        },
+        {
+          "key": "ProviderGuid",
+          "type": "string",
+          "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+        },
+        {
+          "key": "RuleName",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "span.kind",
+          "type": "string",
+          "value": "internal"
+        },
+        {
+          "key": "sysmon.opcode",
+          "type": "string",
+          "value": "Info"
+        },
+        {
+          "key": "sysmon.ppid",
+          "type": "int64",
+          "value": 2552
+        },
+        {
+          "key": "TimeStamp",
+          "type": "string",
+          "value": "10/27/2025 00:38:07"
+        },
+        {
+          "key": "User",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "user_id",
+          "type": "string",
+          "value": "qwer"
+        },
+        {
+          "key": "UtcTime",
+          "type": "string",
+          "value": "2025-10-26 15:38:07.403"
+        }
+      ],
+      "logs": [],
+      "processID": "p1",
+      "warnings": [],
+      "process": {
+        "serviceName": "event-agent",
+        "tags": [
+          {
+            "key": "service.instance.id",
+            "type": "string",
+            "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "dotnet"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.12.0"
+          }
+        ]
+      },
+      "relativeStartTime": 2136201,
+      "depth": 2,
+      "hasChildren": false,
+      "childSpanIds": []
+    },
+    {
+      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+      "spanID": "7b2b0bbb001e58cc",
+      "operationName": "MSBuild.exe@evt:5",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+          "spanID": "1c55f47adc4469b3",
+          "span": {
+            "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+            "spanID": "1c55f47adc4469b3",
+            "operationName": "0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe@evt:1",
+            "references": [
+              {
+                "refType": "CHILD_OF",
+                "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+                "spanID": "44fe8d7251a0322c"
+              }
+            ],
+            "startTime": 1761493087343455,
+            "duration": 707,
+            "tags": [
+              {
+                "key": "channel",
+                "type": "string",
+                "value": "Sysmon"
+              },
+              {
+                "key": "CommandLine",
+                "type": "string",
+                "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+              },
+              {
+                "key": "Company",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "CurrentDirectory",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+              },
+              {
+                "key": "Description",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "error",
+                "type": "bool",
+                "value": true
+              },
+              {
+                "key": "EventName",
+                "type": "string",
+                "value": "ProcessCreate(rule:ProcessCreate)"
+              },
+              {
+                "key": "FileVersion",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "Hashes",
+                "type": "string",
+                "value": "SHA256=0738238CE5F24725197DD54BF3C74621E3B6B1523B7EBCADBEE811FA9DC2BCE1"
+              },
+              {
+                "key": "ID",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "Image",
+                "type": "string",
+                "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+              },
+              {
+                "key": "IntegrityLevel",
+                "type": "string",
+                "value": "High"
+              },
+              {
+                "key": "LogonGuid",
+                "type": "string",
+                "value": "8f5ab330-3c05-68fe-510b-040000000000"
+              },
+              {
+                "key": "LogonId",
+                "type": "int64",
+                "value": 265041
+              },
+              {
+                "key": "OriginalFileName",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "otel.scope.name",
+                "type": "string",
+                "value": "event.agent"
+              },
+              {
+                "key": "otel.status_code",
+                "type": "string",
+                "value": "ERROR"
+              },
+              {
+                "key": "otel.status_description",
+                "type": "string",
+                "value": "Sigma rules matched: 1"
+              },
+              {
+                "key": "ParentCommandLine",
+                "type": "string",
+                "value": "C:\\WINDOWS\\Explorer.EXE"
+              },
+              {
+                "key": "ParentImage",
+                "type": "string",
+                "value": "C:\\Windows\\explorer.exe"
+              },
+              {
+                "key": "ParentProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-3c07-68fe-6600-000000000700"
+              },
+              {
+                "key": "ParentProcessId",
+                "type": "int64",
+                "value": 1608
+              },
+              {
+                "key": "ParentUser",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "ProcessGuid",
+                "type": "string",
+                "value": "8f5ab330-405c-68fe-5901-000000000700"
+              },
+              {
+                "key": "ProcessId",
+                "type": "int64",
+                "value": 1620
+              },
+              {
+                "key": "Product",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "ProviderGuid",
+                "type": "string",
+                "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+              },
+              {
+                "key": "RuleName",
+                "type": "string",
+                "value": "-"
+              },
+              {
+                "key": "sigma.alert",
+                "type": "string",
+                "value": "[\"dd8756e7-a3a0-4768-b47e-8f545d1a751c\"]"
+              },
+              {
+                "key": "sigma.match_count",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "sigma.rule_title",
+                "type": "string",
+                "value": "[\"Suspicious LNK Command-Line Padding with Whitespace Characters\"]"
+              },
+              {
+                "key": "span.kind",
+                "type": "string",
+                "value": "internal"
+              },
+              {
+                "key": "sysmon.opcode",
+                "type": "string",
+                "value": "Info"
+              },
+              {
+                "key": "sysmon.ppid",
+                "type": "int64",
+                "value": 1608
+              },
+              {
+                "key": "TerminalSessionId",
+                "type": "int64",
+                "value": 1
+              },
+              {
+                "key": "TimeStamp",
+                "type": "string",
+                "value": "10/27/2025 00:38:04"
+              },
+              {
+                "key": "User",
+                "type": "string",
+                "value": "WIN-NNNI2M52DK2\\KISIA"
+              },
+              {
+                "key": "user_id",
+                "type": "string",
+                "value": "qwer"
+              },
+              {
+                "key": "UtcTime",
+                "type": "string",
+                "value": "2025-10-26 15:38:04.438"
+              }
+            ],
+            "logs": [],
+            "processID": "p1",
+            "warnings": [
+              "invalid parent span IDs=44fe8d7251a0322c; skipping clock skew adjustment"
+            ],
+            "process": {
+              "serviceName": "event-agent",
+              "tags": [
+                {
+                  "key": "service.instance.id",
+                  "type": "string",
+                  "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "dotnet"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0"
+                }
+              ]
+            },
+            "relativeStartTime": 0,
+            "depth": 0,
+            "hasChildren": true,
+            "childSpanIds": [
+              "7b2b0bbb001e58cc",
+              "ef7c5a1d27f53c14",
+              "b66e7c04b0e54f90",
+              "8d1b49b339b07b4f"
+            ]
+          }
+        }
+      ],
+      "startTime": 1761493089482155,
+      "duration": 180,
+      "tags": [
+        {
+          "key": "channel",
+          "type": "string",
+          "value": "Sysmon"
+        },
+        {
+          "key": "EventName",
+          "type": "string",
+          "value": "Processterminated(rule:ProcessTerminate)"
+        },
+        {
+          "key": "ID",
+          "type": "int64",
+          "value": 5
+        },
+        {
+          "key": "Image",
+          "type": "string",
+          "value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe"
+        },
+        {
+          "key": "otel.scope.name",
+          "type": "string",
+          "value": "event.agent"
+        },
+        {
+          "key": "ProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405d-68fe-5b01-000000000700"
+        },
+        {
+          "key": "ProcessId",
+          "type": "int64",
+          "value": 2552
+        },
+        {
+          "key": "ProviderGuid",
+          "type": "string",
+          "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+        },
+        {
+          "key": "RuleName",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "span.kind",
+          "type": "string",
+          "value": "internal"
+        },
+        {
+          "key": "sysmon.opcode",
+          "type": "string",
+          "value": "Info"
+        },
+        {
+          "key": "sysmon.ppid",
+          "type": "int64",
+          "value": 1620
+        },
+        {
+          "key": "TimeStamp",
+          "type": "string",
+          "value": "10/27/2025 00:38:07"
+        },
+        {
+          "key": "User",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "user_id",
+          "type": "string",
+          "value": "qwer"
+        },
+        {
+          "key": "UtcTime",
+          "type": "string",
+          "value": "2025-10-26 15:38:07.412"
+        }
+      ],
+      "logs": [],
+      "processID": "p1",
+      "warnings": [
+        "clock skew adjustment disabled; not applying calculated delta of -2.1384361s"
+      ],
+      "process": {
+        "serviceName": "event-agent",
+        "tags": [
+          {
+            "key": "service.instance.id",
+            "type": "string",
+            "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "dotnet"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.12.0"
+          }
+        ]
+      },
+      "relativeStartTime": 2138700,
+      "depth": 1,
+      "hasChildren": false,
+      "childSpanIds": []
+    },
+    {
+      "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+      "spanID": "1c55f47adc4469b3",
+      "operationName": "0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe@evt:1",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "ade31fe3973cccc2fb0c8b8dfa821760",
+          "spanID": "44fe8d7251a0322c"
+        }
+      ],
+      "startTime": 1761493087343455,
+      "duration": 707,
+      "tags": [
+        {
+          "key": "channel",
+          "type": "string",
+          "value": "Sysmon"
+        },
+        {
+          "key": "CommandLine",
+          "type": "string",
+          "value": "\"C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe\" "
+        },
+        {
+          "key": "Company",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "CurrentDirectory",
+          "type": "string",
+          "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\"
+        },
+        {
+          "key": "Description",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "error",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "key": "EventName",
+          "type": "string",
+          "value": "ProcessCreate(rule:ProcessCreate)"
+        },
+        {
+          "key": "FileVersion",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "Hashes",
+          "type": "string",
+          "value": "SHA256=0738238CE5F24725197DD54BF3C74621E3B6B1523B7EBCADBEE811FA9DC2BCE1"
+        },
+        {
+          "key": "ID",
+          "type": "int64",
+          "value": 1
+        },
+        {
+          "key": "Image",
+          "type": "string",
+          "value": "C:\\Users\\KISIA\\Desktop\\3\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1\\0738238ce5f24725197dd54bf3c74621e3b6b1523b7ebcadbee811fa9dc2bce1.exe"
+        },
+        {
+          "key": "IntegrityLevel",
+          "type": "string",
+          "value": "High"
+        },
+        {
+          "key": "LogonGuid",
+          "type": "string",
+          "value": "8f5ab330-3c05-68fe-510b-040000000000"
+        },
+        {
+          "key": "LogonId",
+          "type": "int64",
+          "value": 265041
+        },
+        {
+          "key": "OriginalFileName",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "otel.scope.name",
+          "type": "string",
+          "value": "event.agent"
+        },
+        {
+          "key": "otel.status_code",
+          "type": "string",
+          "value": "ERROR"
+        },
+        {
+          "key": "otel.status_description",
+          "type": "string",
+          "value": "Sigma rules matched: 1"
+        },
+        {
+          "key": "ParentCommandLine",
+          "type": "string",
+          "value": "C:\\WINDOWS\\Explorer.EXE"
+        },
+        {
+          "key": "ParentImage",
+          "type": "string",
+          "value": "C:\\Windows\\explorer.exe"
+        },
+        {
+          "key": "ParentProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-3c07-68fe-6600-000000000700"
+        },
+        {
+          "key": "ParentProcessId",
+          "type": "int64",
+          "value": 1608
+        },
+        {
+          "key": "ParentUser",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "ProcessGuid",
+          "type": "string",
+          "value": "8f5ab330-405c-68fe-5901-000000000700"
+        },
+        {
+          "key": "ProcessId",
+          "type": "int64",
+          "value": 1620
+        },
+        {
+          "key": "Product",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "ProviderGuid",
+          "type": "string",
+          "value": "5770385f-c22a-43e0-bf4c-06f5698ffbd9"
+        },
+        {
+          "key": "RuleName",
+          "type": "string",
+          "value": "-"
+        },
+        {
+          "key": "sigma.alert",
+          "type": "string",
+          "value": "[\"dd8756e7-a3a0-4768-b47e-8f545d1a751c\"]"
+        },
+        {
+          "key": "sigma.match_count",
+          "type": "int64",
+          "value": 1
+        },
+        {
+          "key": "sigma.rule_title",
+          "type": "string",
+          "value": "[\"Suspicious LNK Command-Line Padding with Whitespace Characters\"]"
+        },
+        {
+          "key": "span.kind",
+          "type": "string",
+          "value": "internal"
+        },
+        {
+          "key": "sysmon.opcode",
+          "type": "string",
+          "value": "Info"
+        },
+        {
+          "key": "sysmon.ppid",
+          "type": "int64",
+          "value": 1608
+        },
+        {
+          "key": "TerminalSessionId",
+          "type": "int64",
+          "value": 1
+        },
+        {
+          "key": "TimeStamp",
+          "type": "string",
+          "value": "10/27/2025 00:38:04"
+        },
+        {
+          "key": "User",
+          "type": "string",
+          "value": "WIN-NNNI2M52DK2\\KISIA"
+        },
+        {
+          "key": "user_id",
+          "type": "string",
+          "value": "qwer"
+        },
+        {
+          "key": "UtcTime",
+          "type": "string",
+          "value": "2025-10-26 15:38:04.438"
+        }
+      ],
+      "logs": [],
+      "processID": "p1",
+      "warnings": [
+        "invalid parent span IDs=44fe8d7251a0322c; skipping clock skew adjustment"
+      ],
+      "process": {
+        "serviceName": "event-agent",
+        "tags": [
+          {
+            "key": "service.instance.id",
+            "type": "string",
+            "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "dotnet"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.12.0"
+          }
+        ]
+      },
+      "relativeStartTime": 0,
+      "depth": 0,
+      "hasChildren": true,
+      "childSpanIds": [
+        "7b2b0bbb001e58cc",
+        "ef7c5a1d27f53c14",
+        "b66e7c04b0e54f90",
+        "8d1b49b339b07b4f"
+      ]
+    }
+  ],
+  "processes": {
+    "p1": {
+      "serviceName": "event-agent",
+      "tags": [
+        {
+          "key": "service.instance.id",
+          "type": "string",
+          "value": "aeba2a90-6db0-4b87-a132-12bc18a6a81b"
+        },
+        {
+          "key": "telemetry.sdk.language",
+          "type": "string",
+          "value": "dotnet"
+        },
+        {
+          "key": "telemetry.sdk.name",
+          "type": "string",
+          "value": "opentelemetry"
+        },
+        {
+          "key": "telemetry.sdk.version",
+          "type": "string",
+          "value": "1.12.0"
+        }
+      ]
+    }
+  },
+  "warnings": null
+}

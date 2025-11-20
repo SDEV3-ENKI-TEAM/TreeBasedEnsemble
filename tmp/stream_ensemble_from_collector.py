@@ -171,7 +171,8 @@ def main():
             out_msg = {
                 "traceID": trace_id,
                 "score": result["score_mean"],
-                "prediction": result["prediction"]
+                "prediction": result["prediction"],
+                "trace": otlp
             }
 
             try:
